@@ -1,0 +1,79 @@
+.hope_list{
+  display:block;
+}
+.hope_list_NoBorderBottom{
+  .hope_list_item{
+    border:none;
+  }
+}
+.hope_list_TextCenter{
+  .hope_list_item_content{
+    text-align: center;
+  }
+}
+//list_item
+.hope_list_item{
+  line-height:$list_linehieght;
+  overflow: hidden;
+}
+.hope_list_item_Style1{
+  border-bottom:1px dashed $list_border_color_option1;
+}
+.hope_list_item_Style2{
+  border-bottom:1px dashed $list_border_color_option2;
+}
+
+//hope_list_time
+.hope_list_time{
+  float:right;
+  margin-left:5px;
+}
+//hope_list_item_content
+.hope_list_item_contentBox{
+  overflow:hidden;
+}
+.hope_list_item_content{
+  width:100%;
+  display:block;
+  @extend %text_ellipsis;
+}
+
+//hope_list_style_icon
+.hope_list_style{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:$list_style_margin_right;
+}
+.hope_list_style_Square{
+  width:$list_style_icon_size;
+  height:$list_style_icon_size;
+}
+.hope_list_style_Round{
+  width:$list_style_icon_size;
+  height:$list_style_icon_size;
+  border-radius: 50%;
+}
+.hope_list_style_Triangle{
+  border-width:$list_style_icon_size;
+  border-style: solid;
+  height:0;
+  width:0;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  background: transparent !important;
+  margin-right:$list_style_margin_right - $list_style_icon_size;
+}
+.hope_list_style_Gray{
+  background: $list_style_icon_color_option1;
+  border-color: $list_style_icon_color_option1;
+}
+.hope_list_style_Blue{
+  background: $list_style_icon_color_blue;
+  border-color: $list_style_icon_color_blue;
+}
+.hope_list_style_Yellow{
+  background: $list_style_icon_color_option2;
+  border-color: $list_style_icon_color_option2;
+}
+

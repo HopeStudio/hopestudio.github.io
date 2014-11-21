@@ -1,0 +1,26 @@
+.func_floatRight{
+  float:right;
+}
+.func_floatLeft{
+  float:left;
+}
+.func_hideInDeskopAndhPad{
+  @include SmallDesk{
+    display: none;
+  }
+}
+.func_hideInPhoneAndvPad{
+    display: none;
+    @include SmallDesk{
+      display:inline-block;
+    }
+}
+.func_flex_uniform{
+  @include SmallDesk{
+    @include flexDisplay;
+    @include flexJustifyContent(space-between);
+    @include MediumDesk{
+      @include flexJustifyContent(flex-start);
+    }
+  }
+}

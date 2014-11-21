@@ -1,0 +1,53 @@
+.hope_pager_mobile{
+  text-align: center;
+  overflow:hidden;
+  display: block;
+  #pageNum,#btnPage,.p_num,.inputPager_des{
+    display:none;
+  }
+  .inputPager_page{
+    width: $pager_mobile_width;
+    margin:$pager_margin_vertical auto;
+    border-radius: $pager_mobile_borderRadius;
+    box-shadow: 2px 2px 3px #d0cfcc;
+    a{
+      padding:0 10px;
+      color: $pager_color_link;
+      line-height:$pager_height;
+      &:hover{
+        color: #b59563;
+      }
+    }
+  }
+}
+.hope_pager_web {
+  display:none;
+}
+@include SmallDesk{
+  .hope_pager_web {
+    display: block;
+    overflow: hidden;
+    #pageNum,#btnPage,.inputPager_des{
+      display:none;
+    }
+    .inputPager_page {
+      height: $pager_height;
+      margin: $pager_margin_vertical 0;
+      line-height: $pager_height - 2;
+      float: right;
+      a {
+        margin-left: 10px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: $pager_color_link;
+        float: left;
+        &:hover {
+          background-color: $pager_color_link_active;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hope_pager_mobile {display: none; }
+}

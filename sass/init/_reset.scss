@@ -1,0 +1,31 @@
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding:0;margin:0}
+img {border:0;}
+
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
+
+//@purpose To enable resizing for IE
+//@branch For IE6-Win, IE7-Win
+input, button, textarea, select {*font-size:100%;}
+input {background:transparent; border:none;}
+body {font:14px/1.5 Helvetica, Arial, sans-serif;}
+ol, ul ,li{list-style:none;}
+button {border:none;}
+// tables still need 'cellspacing="0"' in the markup
+table {border-collapse:collapse; border-spacing:0;}
+:link,
+:visited {text-decoration:none;}
+:focus {outline:0;}
+pre{
+  font-family:"Lucida Console",Consolas,"Courier New",Tahoma;
+  color:#666;
+  text-indent:0;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+}
+/* for HTML5 */
+article,aside,figure,figcaption,footer,header,hgroup,nav,section,summary {display:block;}
+figure {margin:0;}

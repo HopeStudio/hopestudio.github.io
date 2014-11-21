@@ -1,0 +1,164 @@
+.hope_headerWrap{
+  border-bottom: 1px solid $global_color_seperator;
+  @include boxShadow;
+}
+.hope_headerWrap_RowStyle{
+  .hope_headerWrap_header{
+    @include SmallDesk{
+      float:none;
+    }
+  }
+  .hope_linkToChild{
+    @include SmallDesk{
+      display:block;
+    }
+  }
+  .hope_headerWrap_toggler_search{
+    margin-top:3px;
+    @include SmallDesk{
+      display: block;
+    }
+  }
+  .hope_headerWrap_toggler_search{
+    margin-top:3px;
+    @include MediumDesk{
+      display: none;
+    }
+  }
+  .hope_headerWrap_nav{
+    float:none;
+    padding:0;
+    border-top:1px solid $headerWrap_header_nav_seperator_color;
+    margin-bottom:-1px;
+  }
+  .hope_headerWrap_nav_list{
+    @include SmallDesk{
+      display: block;
+      float:none;
+    }
+  }
+  .hope_headerWrap_nav_left{
+    .hope_headerWrap_nav_search{
+      margin-top:10px;
+    }
+  }
+  .hope_headerWrap_nav_list_item{
+    @include SmallDesk{
+      a{
+        &:hover{
+          background: $headerWrap_nav_list_item_hover_main;
+        }
+      }
+    }
+  }
+}
+//header
+.hope_headerWrap_header{
+  padding:$headerWrap_header_padding_vertical 0;
+  @include SmallDesk{
+    width:auto;
+    float:left;
+  }
+}
+.hope_headerWrap_header_left{
+  line-height:0;
+}
+.hope_headerWrap_header_right{
+  float:right;
+}
+.hope_headerWrap_toggler_nav{
+  margin-top:3px;
+  cursor: pointer;
+  @include SmallDesk{
+    display:none;
+
+  }
+}
+//nav
+.hope_headerWrap_nav{
+  @include SmallDesk{
+    float:right;
+    padding:$headerWrap_header_padding_vertical 0;
+  }
+}
+.hope_headerWrap_nav_left{
+  .hope_headerWrap_nav_search{
+    padding-bottom:10px;
+    display:none;
+  }
+}
+.hope_headerWrap_nav_right{
+  float:right;
+  display: none;
+  @include MediumDesk {
+    display:block;
+  }
+  .hope_headerWrap_nav_search{
+    margin-top:($headerWrap_header_nav_height - $search_height_default)/2 - 1px;
+  }
+}
+.hope_headerWrap_nav_list{
+  display: none;
+  @include SmallDesk{
+    display: block;
+    float:right;
+  }
+}
+.hope_headerWrap_nav_list_item{
+  position: relative;
+  float:left;
+  font: 16px/38px "Microsoft Yahei";
+  line-height:$headerWrap_header_logo_height;
+  width:33.333%;
+  a{
+    display: block;
+    &:hover{
+      background: $headerWrap_nav_list_item_hover_main;
+    }
+  }
+  text-align: center;
+  @include SmallDesk{
+    width:auto;
+    a{
+      padding:0 $headerWrap_nav_list_item_padding_horizontal;
+      &:hover{
+        background: none;
+      }
+    }
+  }
+}
+.hope_headerWrap_dropMenu_for_sites{
+  border-bottom:1px solid $global_color_seperator;
+}
+.hope_headerWrap_nav_dropdown{
+  position:absolute;
+  background:#fff;
+  display: none;
+  width:100%;
+  z-index:10;
+}
+.hope_headerWrap_nav_dropdown_item a{
+  &:hover{
+    background:$headerWrap_nav_list_item_hover_main;
+  }
+}
+//toggler
+.hope_headerWrap_togglerIcon_item{
+  float:left;
+  margin-left:10px;
+  cursor: pointer;
+  line-height:$headerWrap_header_logo_height;
+}
+.hope_headerWrap_toggler_search{
+  margin-top:3px;
+  @include SmallDesk{
+    display: none;
+  }
+}
+
+//spec
+.hope_linkToChild{
+  @include SmallDesk{
+    display: none;
+  }
+}
