@@ -4,14 +4,29 @@
  * @author cgspine
  * @date 2014-11-21
  *
- * #reset         样式初始化
- * #header        网站头部
- * #nav           网站导航条
- * #slider        网站slider
- * #indexShow     网站首页展示内容
- *		#picShow  图片展示
- *		#newArts  最新文章
- * #footer        网站footer区域   
+ * * * * * * * * index * * * * * * * * * * * * *
+ * #reset            样式初始化
+ * #header           网站头部
+ * #nav              网站导航条
+ * #slider           网站slider
+ * #indexShow        网站首页展示内容
+ *		#picShow     图片展示
+ *		#newArts     最新文章
+ * #footer           网站footer区域   
+ *
+ * * * * * * * * cloumn * * * * * * * * * * * * *
+ * #banner           栏目页banner区域
+ * #location         栏目页location区域
+ * #column_main      栏目页主体区域 = column_section + pager
+ * #column_section   栏目页栏目节
+ * #pager            栏目页分页
+ *
+ * * * * * * * * content * * * * * * * * * * * * *
+ * #content          内容页主体盒子 = titleZone + contentZone
+ * #titleZone        内容页标题区域
+ * #contentZone      内容页主体区域 = contentBody + sidebar
+ * #contentBody      内容页内容区域
+ * #sidebar          内容页侧边栏
  */
 
 /* 
@@ -21,7 +36,6 @@
 img {border:0;line-height:0;}
 * :focus {outline:0;}
 * h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
-body {font:14px/1.5 Helvetica, Arial, sans-serif;}
 a {text-decoration:none; color:#000;}
 ol, ul {list-style:none;}
 button {border:none;}
@@ -29,6 +43,8 @@ table {border-collapse:collapse; border-spacing:0;}
 :link, :visited {text-decoration:none;}
 .clearfix {clear:both;}
 .row{width:100%;}
+
+body {font:14px/1.5 Helvetica, Arial, sans-serif;background:#f5f4f2;}
 .container{width:1200px;margin:0 auto;}
 .container:after{display:block;clear:both;content:'';}
 
@@ -68,6 +84,7 @@ table {border-collapse:collapse; border-spacing:0;}
 	box-shadow:0 1px 2px #bfbfbf;
 	background:#faf4e8;
 	z-index:10;
+	position:relative;
 }
 .nav_list_item{
 	position:relative;
@@ -93,6 +110,7 @@ table {border-collapse:collapse; border-spacing:0;}
 	right:0;
 	display:none;
 	background:#faf4e8;
+	z-index:10;
 }
 /**
  * #slider
@@ -257,7 +275,7 @@ table {border-collapse:collapse; border-spacing:0;}
 }
 
 /**
- * footer
+ * #footer
  */
 .footer{
 	background:#33312e;
@@ -276,15 +294,195 @@ table {border-collapse:collapse; border-spacing:0;}
 	text-align:right;
 }
 
+/**
+ * #banner
+ */
+.banner{
+	margin-top:20px;
+}
+.banner_img{
+	float:left;
+	margin-right:10px;
+}
+.banner_joinus{
+	overflow:hidden;
+	display:block;
+}
+/**
+ * #location
+ */
+.location{
+	margin-top:20px;
+	border-top:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+	position:relative;
+	line-height:36px;
+}
+/*利用伪元素来化双颜色边线，IE8及以下浏览器不支持，显示为单颜色边线*/
+.location:before,.location:after{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	right:0;
+	height:0;
+}
+.location:before{
+	top:0px;
+	border-top:1px solid #fff;
+}
+.location:after{
+	bottom:-2px;
+	border-bottom:1px solid #fff;
+}
+.icon_location{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:url(../images/icon_aperture_gray.png) no-repeat;
+	margin-right:5px;
+	vertical-align:-8px;
+}
+/**
+ * #column_main
+ */
 
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * #column_section
+ */
+.column_section_title{
+	margin-top:15px;
+	margin-bottom:5px;
+	display:block;
+	font-family: "Microsoft Yahei";
+	font-size: 20px;
+	color: #bd9d6b;
+	line-height:50px;
+}
+.column_section_body{
+	margin-left:-8px;
+	margin-right:-8px;
+	width:1216px;
+}
+.card:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.card_item{
+	background: #fff;
+	float: left;
+	margin: 0 7px 10px 7px;
+	padding:22px 6px 6px;
+	height:300px;
+	width: 278px;
+	position: relative;
+	overflow: hidden;
+}
+.card_item:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 290px;
+	height: 7px;
+	background: url(../images/frameshadow.png);
+}
+.card_item_header{
+	overflow:hidden;
+}
+.card_item_header_author{
+	float: left;
+	width: 60px;
+	height: 80px;
+	text-align: center;
+	margin-right: 10px;
+}
+.card_item_header_author img{
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+}
+.card_item_header_author span{
+	line-height: 40px;
+}
+.card_item_header_main{
+	overflow:hidden;
+}
+.card_item_title{
+	display: block;
+	line-height: 40px;
+	font-weight: bold;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.card_item_date{
+	line-height: 40px;
+	color: #999999;
+}
+.card_item_img img{
+	display: block;
+	max-width: 278px;
+	height: 185px;
+	margin: 0 auto 12px;
+}
+.card_info{
+	overflow:hidden;
+}
+.card_info_item{
+	color: #b2b2b2;
+	cursor: default;
+	display: block;
+	font-family: "calibri";
+	font-size: 12px;
+	float: right;
+	margin-left: 10px;
+	height: 18px;
+	line-height: 18px;
+}
+.icon_hits,.icon_comments{
+	display:inline-block;
+	height:18px;
+	margin-right:5px;
+}
+.icon_hits{
+	background:url(../images/icon_hits.png) no-repeat;
+	width:16px;
+}
+.icon_comments{
+	background:url(../images/icon_comments.png) no-repeat;
+	width:14px;
+}
+.card_shadow{
+	background:url(../images/frameshadow.png) no-repeat;
+	width: 290px;
+	height: 8px;
+}
+/**
+ * #pager
+ */
+.pager{
+	float:right;
+	margin:20px 0;
+}
+.pager_item{
+	margin-left: 10px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #b59563;
+	float: left;
+	line-height:30px;
+}
+.pager_item:hover{
+	background:#b59563;
+	color:#fff;
+}
