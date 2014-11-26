@@ -30,7 +30,7 @@
         case "touchend":
           break;
         case "touchmove":
-          event.preventDefault();
+          //event.preventDefault();
           touchPosition.distanceX = event.touches[0].pageX - touchPosition.x;
           touchPosition.distanceY = event.touches[0].pageY - touchPosition.y;
           break;
