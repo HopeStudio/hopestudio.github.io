@@ -1,0 +1,23 @@
+@import "var/var";
+@import "icon/icon";
+
+
+
+.hope_slider_pre,.hope_slider_next{
+  @extend .hope_icon;
+  display:block;
+  content:'';
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  top: 50%;
+  margin-top:-29px;
+}
+.hope_slider_pre{
+  left: 20px;
+  @extend .hope_icon_arl;
+}
+.hope_slider_next {
+  right: 20px;
+  @extend .hope_icon_arr;
+}

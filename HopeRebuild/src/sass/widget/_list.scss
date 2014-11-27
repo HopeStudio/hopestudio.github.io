@@ -1,0 +1,59 @@
+.hope_list{
+  display:block;
+}
+.hope_list_NoBorderBottom{
+  .hope_list_item{
+    border:none;
+  }
+}
+//list_item
+.hope_list_item{
+  line-height:$list_linehieght;
+  border-bottom:1px dashed $list_border_color_default;
+  overflow: hidden;
+}
+
+//hope_list_time
+.hope_list_time{
+  float:right;
+  margin-left:$list_time_margin_left;
+}
+//hope_list_item_content
+.hope_list_item_contentBox{
+  overflow:hidden;
+}
+.hope_list_item_content{
+  width:100%;
+  display:block;
+  @extend %text_ellipsis;
+}
+
+//hope_list_style_icon
+.hope_list_style{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:$list_style_margin_right;
+  background: $list_style_icon_color_default;
+  border-color: $list_style_icon_color_default;
+}
+.hope_list_style_Square{
+  width:$list_style_icon_size;
+  height:$list_style_icon_size;
+}
+.hope_list_style_Round{
+  width:$list_style_icon_size;
+  height:$list_style_icon_size;
+  border-radius: 50%;
+}
+.hope_list_style_Triangle{
+  border-width:$list_style_icon_size;
+  border-style: solid;
+  height:0;
+  width:0;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  background: transparent !important;
+  margin-right:$list_style_margin_right - $list_style_icon_size;
+}
+

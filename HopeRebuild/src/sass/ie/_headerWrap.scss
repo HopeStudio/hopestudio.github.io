@@ -1,0 +1,40 @@
+.hope_headerWrap{
+  min-width:960px + $global_padding_horizontal * 2;
+}
+.hope_headerWrap_RowStyle{
+  .hope_headerWrap_header{  float:none; width:100%; }
+  .hope_linkToChild{ display: block; }
+  .hope_headerWrap_nav_list{ display: block;float:none;}
+  .hope_headerWrap_nav_list_item a:hover{ background: $headerWrap_nav_list_item_hover_main; }
+}
+.container{
+  width:960px !important;
+}
+//headerWrap
+.hope_headerWrap_header{
+  *width:120px;
+  float:left;
+}
+.hope_headerWrap_toggler_nav,.hope_headerWrap_toggler_search,.hope_linkToChild{
+  display:none;
+}
+.hope_headerWrap_nav{
+  height:44px;
+  padding:$headerWrap_header_padding_vertical 0;
+}
+.hope_headerWrap_nav_right{
+  display:block;
+}
+.hope_headerWrap_nav_list{
+  display: block;
+  float:right;
+}
+.hope_headerWrap_nav_list_item{
+  width:auto;
+  a{
+    padding:0 $headerWrap_nav_list_item_padding_horizontal;
+    &:hover{
+      background: none;
+    }
+  }
+}

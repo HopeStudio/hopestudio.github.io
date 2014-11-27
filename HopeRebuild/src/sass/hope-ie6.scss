@@ -1,0 +1,41 @@
+/**
+ * ie6 fix
+ * @author cgspine
+ * @date 2014-11-27
+ * 
+ * #float-fix
+ * #hide-element
+ */
+
+/**
+ * #float-fix
+ */
+.hope_list_item,.hope_list_item_contentBox,.hope_listbox_item
+{
+	*zoom:1;
+}
+.hope_card_header_main{
+	float:left;
+}
+/**
+ * #hide-element
+ */
+.hope_list_style{
+	display:none;
+}
+/**
+ * #headerWrap
+ */
+.hope_logo{
+	background:url("../images/logo/ie6/logo_40_white.png");
+}
+.hope_headerWrap_nav_list_item{
+	width:110px;		
+}
+.hope_headerWrap_nav_dropdown{
+	left:0;
+}
+
+.hope_headerWrap_nav_dropdown_item{
+	height:44px;
+}
