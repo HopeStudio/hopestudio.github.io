@@ -7,15 +7,6 @@ body {
   font:14px/1.8 Helvetica, Arial, sans-serif;
   color: #000;
 }
-.main{
-  background: $global_bg_body_main;
-}
-.internal{
-  background: $global_bg_body_internal;
-}
-.culture{
-  background: $global_bg_body_culture;
-}
 
 //a a:link a:visited
 a,a:link,a:visited{
@@ -32,7 +23,7 @@ a:hover{
       clear:both;
   }
 }
-.container{
+.hope_container{
   margin:0 auto;
   padding:0 $global_padding_horizontal;
   max-width:$global_frame_maxWidth;
@@ -42,7 +33,4 @@ a:hover{
     display:table;
     clear:both;
   }
-}
-.bdshare-slide-button-box{
-  z-index:100;
 }
