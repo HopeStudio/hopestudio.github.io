@@ -1,0 +1,10 @@
+.main{
+	a{
+		&:hover{
+			color:$main_a_hover_color;
+		}
+	}
+	.hope_container{
+		max-width:960px;
+	}
+}

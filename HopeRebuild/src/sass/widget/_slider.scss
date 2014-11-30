@@ -65,27 +65,9 @@
   background-repeat: no-repeat;
   overflow:hidden;
 }
-//.hope_slider_list_item:nth-child(1){
-//  background-image: url("../images/slider768/slider01.jpg");
-//}
-//.hope_slider_list_item:nth-child(2){
-//  background-image: url("../images/slider768/slider02.jpg");
-//}
-//.hope_slider_list_item:nth-child(3){
-//  background-image: url("../images/slider768/slider03.jpg");
-//}
 
 @include SmallDesk{
   .hope_slider{
     height:$slider_height_large;
   }
-//  .hope_slider_list_item:nth-child(1){
-//    background-image: url("../images/slider1920/slider01.jpg");
-//  }
-//  .hope_slider_list_item:nth-child(2){
-//    background-image: url("../images/slider1920/slider02.jpg");
-//  }
-//  .hope_slider_list_item:nth-child(3){
-//    background-image: url("../images/slider1920/slider03.jpg");
-//  }
 }
