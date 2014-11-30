@@ -1,6 +1,15 @@
-.main{
-  padding-top:$headerWrap_header_logo_height + $headerWrap_header_padding_vertical * 2 + 1;
-}
+ .main_headerWrap_nav_list_item{
+	a:hover{
+		color:#d90000;
+		background:#fff;
+	}
+ }
+ .main_headerWrap_nav_dropdown_item{
+	a:hover{
+		color:#fff;
+		background:#d90000;
+	}
+ }
 .style_main{
   .hope_headerWrap_nav_list_item a:hover{  background: none;color:$main_a_color_hover; }
 }
