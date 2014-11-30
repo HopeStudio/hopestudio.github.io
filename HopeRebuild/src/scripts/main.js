@@ -170,7 +170,9 @@
         var needHeight = windowWidth * height/point;
         var needWidth = needHeight * width/height;
         $("."+slider).css("height",needHeight);
-      }
+      }else{
+        $("."+slider).css("height",height);
+	  }
     },
     cardToggler: function (card) {
       $("."+card).hover(
