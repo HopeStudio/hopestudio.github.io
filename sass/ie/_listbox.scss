@@ -1,0 +1,16 @@
+.hope_listbox_item_PicRight{
+  .hope_listbox_item_pic{
+      float:right;
+      margin-left:$list_item_pic_padding_vertical;
+      margin-right:0;
+  }
+}
+.hope_listbox_item_pic{
+  float:left;
+  margin-right:$list_item_pic_padding_vertical;
+  margin-left:0;
+  margin-top:4px;
+  img{
+    width:auto;
+  }
+}

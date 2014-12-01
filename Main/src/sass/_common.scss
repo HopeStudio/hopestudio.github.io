@@ -1,0 +1,25 @@
+.main_headerWrap{
+	position:relative;
+	z-index:100;
+}
+.main_headerWrap_nav_list_item{
+	a:hover{
+		color:$main_nav_list_item_hover_font_color;
+		background:$main_nav_list_item_hover_bg_color;
+	}
+	@include SmallDesk{
+		a:hover{
+			color:$main_a_hover_color;
+			background:#fff;
+		}
+	}
+}
+.main_headerWrap_nav_dropdown_item{
+	a{
+		line-height:38px;
+	}
+	a:hover{
+		color:$main_nav_list_item_hover_font_color;
+		background:$main_nav_list_item_hover_bg_color;
+	}
+}

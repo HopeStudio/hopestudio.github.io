@@ -1,0 +1,40 @@
+
+.hope_icon_draw_Location{
+  border-left-width:8px;
+  border-top-width: 5px;
+  border-bottom-width:5px;
+  border-style: solid;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  background: transparent !important;
+  display:inline-block;
+  vertical-align: middle;
+  border-left-color: $icon_draw_location_color;
+  height:0;
+  width:0;
+}
+.icon_toggler{
+  $height:$icon_draw_toggler_size - 2 * $icon_draw_toggler_padding;
+  $width:$height;
+  position: relative;
+  width:$width;
+  height:$height;
+  padding:$icon_draw_toggler_padding;
+  border:1px solid $icon_draw_toggler_color;
+}
+.icon_toggler_nav{
+  padding-top:$icon_draw_toggler_padding+3px;
+  padding-bottom: $icon_draw_toggler_padding+3px;
+  $height-new: $icon_draw_toggler_size - 2 * $icon_draw_toggler_padding - 6px;
+  height:$height-new;
+  .icon_bar +.icon_bar{
+    margin-top:($height-new - 3 *$icon_draw_bar_height)/2;
+  }
+}
+.icon_bar{
+  display:block;
+  height:$icon_draw_bar_height;
+  background:$icon_draw_toggler_color ;
+}
+

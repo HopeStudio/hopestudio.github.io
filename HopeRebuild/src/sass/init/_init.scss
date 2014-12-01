@@ -1,0 +1,36 @@
+//reset
+@import "reset";
+
+
+//body
+body {
+  font:14px/1.8 Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+//a a:link a:visited
+a,a:link,a:visited{
+  color:$global_color_a;
+}
+a:hover{
+  color:$global_color_a_link
+}
+.floatfix{
+  *zoom:1;
+  &:after{
+      content:"";
+      display:table;
+      clear:both;
+  }
+}
+.hope_container{
+  margin:0 auto;
+  padding:0 $global_padding_horizontal;
+  max-width:$global_frame_maxWidth;
+  *zoom:1;
+  &:after{
+    content:'';
+    display:table;
+    clear:both;
+  }
+}

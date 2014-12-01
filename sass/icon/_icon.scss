@@ -1,0 +1,9 @@
+@import "draw";
+@import "picIcon";
+
+.icon_toggler{
+  .icon-search_left{
+    font-size:30px;
+    color:$icon_draw_toggler_color;
+  }
+}

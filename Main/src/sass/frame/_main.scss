@@ -1,0 +1,168 @@
+.main{
+  //header
+  .container{
+    max-width:960px;
+  }
+  //padding-top:$icon_draw_toggler_size + $headerWrap_header_padding_vertical * 2 + 1;
+  //@include SmallDesk{
+   // padding-top:$headerWrap_header_logo_height + $headerWrap_header_padding_vertical * 2 + 1;
+ // }
+  //.hope_headerWrap{ position:fixed;top:0;left:0;right:0;z-index:10; }
+  .hope_headerWrap_nav_list_item a{
+    @include SmallDesk{  padding:0 12px; }
+    @include MediumDesk{ padding: 0 15px; }
+  }
+  //slider
+  .hope_slider_list_item:nth-child(1){
+    background-image: url("../images/slider1920/main_slider_1.jpg");
+  }
+  .hope_slider_list_item:nth-child(2){
+    background-image: url("../images/slider1920/main_slider_2.jpg");
+  }
+  .hope_slider_list_item:nth-child(3){
+    background-image: url("../images/slider1920/main_slider_3.jpg");
+  }
+
+  @include SmallDesk{
+    .hope_slider{
+      height:$slider_height_large;
+    }
+    .hope_slider_list_item:nth-child(1){
+      background-image: url("../images/slider1920/main_slider_1.jpg");
+    }
+    .hope_slider_list_item:nth-child(2){
+      background-image: url("../images/slider1920/main_slider_2.jpg");
+    }
+    .hope_slider_list_item:nth-child(3){
+      background-image: url("../images/slider1920/main_slider_3.jpg");
+    }
+  }
+}
+.style_main{
+  color:$main_font_color;
+  a:hover{
+    color:$main_a_color_hover;
+  }
+  a.hope_list_item_content:hover{
+     color:$main_a_color_hover;
+   }
+  //headerWrap
+  .hope_headerWrap{ background: #fff; }
+  .hope_headerWrap_nav_list_item a:hover{ background:$main_a_color_hover;color:#fff; @include SmallDesk{ background: none;color:$main_a_color_hover; }}
+  .hope_headerWrap_nav_dropdown_item a:hover{ background:$main_a_color_hover;color:#fff;}
+  //slider
+  .hope_slider{border-bottom:3px solid $main_a_color_hover }
+  //main_index_show
+  .main_index_show{ background: #fff; }
+  a.main_index_show_item_title{ color:$main_font_color; }
+  //main_index_cnt
+  .main_index_cnt_readMore{ background:$main_index_a_color_hover;color:#fff;&:hover{ background: $main_a_color_hover; } }
+  a.main_index_cnt_title_content{ color:#000; }
+  .main_index_cnt_title_icon{color:$main_index_icon_color;}
+  .main_index_cnt .hope_list_item_content{ color:$main_index_cnt_font_color; }
+ }
+
+//index_show
+.main_index_show{
+  @include boxShadow;
+  overflow:hidden;
+  .container{
+    position: relative;
+    padding:0;max-width:960px + 2 * $global_padding_horizontal;
+    @include SmallDesk{
+      &:before{
+        content:'';
+        display:block;
+        height:0;
+        left:$global_padding_horizontal;
+        right:$global_padding_horizontal;
+        border-top:1px solid $global_color_seperator;
+        bottom:52px;
+        position: absolute;
+      }
+    }
+  }
+}
+.main_index_show_item{
+  @include box_sizing(border-box);
+  float:left;
+  width:100%;
+  padding:0 $global_padding_horizontal;
+  @include SmallDesk{
+    width: 50%;
+  }
+  @include MediumDesk{
+    width: 25%;
+  }
+  .hope_list{
+    .hope_list_item:last-child{ border-bottom:1px solid $global_color_seperator; }
+  }
+}
+a.main_index_show_item_title{
+  padding-top:10px;
+  font:18px/32px "Microsoft Yahei";
+  font-weight: bold;
+  display: block;
+  i{vertical-align: middle;}
+}
+.main_index_show_extral{
+  float:right;
+  padding:10px $global_padding_horizontal 10px 0;
+  display:none;
+  @include SmallDesk{
+    display:block;
+  }
+}
+//index_cnt
+.main_index_cnt{
+  overflow:hidden;
+  padding-bottom:5px;
+  &_left{
+    float:left;
+    width:100%;
+  }
+  &_newArticles{
+    @include SmallDesk{
+      margin-right:$global_padding_horizontal + 280px;
+    }
+    .hope_list_item:last-child{ border:none; }
+  }
+  &_right{
+    float:left;
+    width:100%;
+    @include SmallDesk{
+      width:280px;
+      margin-left:-280px;
+    }
+
+    &_imgShow{
+      padding:7px 0;
+      overflow: hidden;
+      a{  display: block;line-height: 0;float: left;width:100%;height:79px;@include LargePhone{width:48%;} @include SmallDesk{width: 100%;}}
+      .main_index_cnt_right_imgShow_2{ margin-top:10px;@include LargePhone{ margin-left:4%;margin-top:0; }@include SmallDesk{ display: none; } }
+      img{ height:100%;width:100%; }
+    }
+    .hope_list_item:last-child{ border:none; }
+  }
+  &_title{
+    line-height:32px;
+    border-bottom:1px solid $global_color_seperator;
+    font-size:14px;
+    &_content{
+      display: block;
+      overflow: hidden;
+    }
+    &_icon{
+      vertical-align: -4px;
+      font-size:20px;
+    }
+  }
+  &_readMore{
+    padding:0 5px;
+    float:right;
+    font-size:12px;
+    line-height:18px;
+    margin-top:7px;
+  }
+
+}

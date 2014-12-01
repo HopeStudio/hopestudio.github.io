@@ -1,0 +1,26 @@
+.hope_pager_web {
+  display: block;
+  overflow: hidden;
+  #pageNum,#btnPage,.inputPager_des{
+    display:none;
+  }
+  .inputPager_page {
+    height: $pager_height;
+    margin: $pager_margin_vertical 0;
+    line-height: $pager_height - 2;
+    float: right;
+    a {
+      margin-left: 10px;
+      padding: 0 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      color: $pager_color_link;
+      float: left;
+      &:hover {
+        background-color: $pager_color_link_active;
+        color: #fff;
+      }
+    }
+  }
+}
+.hope_pager_mobile {display: none; }

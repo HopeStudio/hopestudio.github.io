@@ -1,0 +1,185 @@
+@mixin card2
+{
+  @media (min-width:$card_width_2) {
+    @content;
+  }
+}
+@mixin card3
+{
+  @media (min-width:$card_width_3) {
+    @content;
+  }
+}
+@mixin card4
+{
+  @media (min-width:$card_width_4) {
+    @content;
+  }
+}
+.hope_card{
+  margin:0 auto;
+  overflow: hidden;
+  width:$card_width_1;
+  @include card2{
+    width:$card_width_2;
+  }
+  @include card3{
+    width:$card_width_3;
+  }
+  @include card4{
+    width:$card_width_4;
+  }
+}
+.hope_card_WithPadding{
+  .hope_card_item{
+    padding:22px $card_padding_horizontal $card_padding_horizontal;
+  }
+}
+.hope_card_WithShadow{
+  .hope_card_item{
+    &:after{
+      content:'';
+      position: absolute;
+      left:0;
+      bottom:0;
+      display: block;
+      width:$card_width;
+      height: 7px;
+      background: url(../images/frameshadow.png);
+    }
+  }
+}
+.hope_card_WithBorder{
+  .hope_card_item{
+    border:1px solid $card_border_color;
+    @include box_sizing(border-box);
+  }
+  .hope_card_img{
+    max-width: $card_content_width - 2px;
+  }
+}
+//hope_card_item
+.hope_card_item{
+  background: $card_color_bg;
+  float:left;
+  margin:0 $card_margin_horizontal $card_margin_horizontal;
+  width:$card_content_width;
+  position: relative;
+  overflow: hidden;
+}
+//header
+.hope_card_header{
+  position:relative;
+  overflow: hidden;
+}
+.hope_card_header_author{
+  float:left;
+  width: 60px;
+  height: 80px;
+  text-align: center;
+  margin-right:10px;
+  img{
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  }
+  span{
+    line-height: 40px;
+  }
+}
+.hope_card_header_main{
+  overflow:hidden;
+}
+.hope_card_header_title{
+  display: block;
+  line-height: 40px;
+  font-weight: bold;
+  @extend %text_ellipsis;
+}
+.hope_card_header_date{
+  line-height: 40px;
+  color: #999999;
+}
+//img
+.hope_card_img{
+  display: block;
+  max-width: $card_content_width;
+  height: 185px;
+  margin: 0 auto 12px;
+}
+//info
+.hope_card_info{
+  overflow: hidden;
+}
+.hope_card_info_item{
+  color: #b2b2b2;
+  cursor: default;
+  display: block;
+  font-family: "calibri";
+  font-size: 12px;
+  float: right;
+  margin-left:10px;
+  height: 18px;
+  line-height: 18px;
+}
+//title
+.hope_card_title{
+  padding: 10px 0 22px 18px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  display:block;
+}
+.hope_card_hoverShow{
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  overflow:hidden;
+  background: #fff;
+  opacity: 0;
+}
+.hope_card_hoverShow_main{
+  &:hover{
+    color:$global_color_a;
+  }
+  display:block;
+  .hope_card_title{
+    padding: 0 0 6px 0;
+  }
+  position:absolute;
+  top:0;
+  bottom:50px;
+  left:0;
+  right:0;
+  padding:10px;
+}
+.hope_card_hoverShow_content{
+  font-size:12px;
+}
+.hope_card_hoverShow_readmore{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:50px;
+  a{
+    display:block;
+    max-width: 100px;
+    text-align: center;
+    padding:0 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #c5c5c5;
+    background: #b59563;
+    font-size: 12px;
+    line-height: 34px;
+    font-weight: bold;
+    color: #fff;
+    margin:0 auto;
+  }
+}
+

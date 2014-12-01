@@ -1,0 +1,29 @@
+@import "compass/utilities/sprites";
+
+$icons: sprite-map("HopeIcon/*.png",$spacing:5px,$layout:vertical);
+
+
+$icon_width_default:40px;
+$icon_height_default:40px;
+
+
+.hope_icon{
+	background-image:sprite-url($icons);
+	background-size: image-width(sprite-path($icons)) image-height(sprite-path($icons));
+	width:$icon_width_default;
+	height:$icon_height_default;
+}
+
+@each $item in sprite-names($icons) {
+	$height: sprite-height($icons,#{$item});
+	$width: sprite-width($icons,#{$item});
+	.hope_icon_#{$item}{
+		background-position: sprite-position($icons,#{$item});
+		@if $width != $icon_width_default{
+			 width:$width;
+		}
+		@if $height != $icon_height_default{
+			height:$height;
+		}
+	}
+}

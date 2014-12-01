@@ -1,0 +1,71 @@
+//var:device width
+$l:1200px;
+$m:960px;
+$s:768px;
+$p:480px;
+
+// #screenResolution
+@mixin screenResolution($num)
+{
+  @media only screen and (-webkit-min-device-pixel-ratio: $num),
+  only screen and (min--moz-device-pixel-ratio: $num),
+  only screen and (-o-min-device-pixel-ratio: $num),
+  only screen and (min-device-pixel-ratio: $num),
+  only screen and (min-resolution: #{$num}dppx),
+  only screen and (min-resolution: #{$num*96}dpi) {
+    @content;
+  }
+}
+// #device width
+@mixin LargeDesk
+{
+  @media (min-width:$l) {
+    @content;
+  }
+}
+@mixin MediumDesk
+{
+  @media (min-width:$m) {
+    @content;
+  }
+}
+@mixin SmallDesk
+{
+  @media (min-width:$s) {
+    @content;
+  }
+}
+@mixin LargePhone
+{
+  @media (min-width:$p) {
+    @content;
+  }
+}
+@mixin SmallPhone
+{
+  @media (max-width:$p) {
+    @content;
+  }
+}
+
+#state-indicator{
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  @include SmallPhone{
+    z-index:5;
+  }
+  @include LargePhone{
+    z-index:4;
+  }
+  @include SmallDesk{
+    z-index:3;
+  }
+  @include MediumDesk{
+    z-index:2;
+  }
+  @include LargeDesk{
+    z-index:1;
+  }
+
+}

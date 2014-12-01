@@ -1,0 +1,31 @@
+ .main_headerWrap_nav_list_item{
+	a:hover{
+		color:#d90000;
+		background:#fff;
+	}
+ }
+ .main_headerWrap_nav_dropdown_item{
+	a:hover{
+		color:#fff;
+		background:#d90000;
+	}
+ }
+.style_main{
+  .hope_headerWrap_nav_list_item a:hover{  background: none;color:$main_a_color_hover; }
+}
+.main_index_show .container { width:1000px !important;}
+.main_index_show_item{  width: 25%;  }
+.main_index_show_extral{ display:block; }
+.main_index_cnt{
+  &_newArticles{
+      margin-right:$global_padding_horizontal + 280px;
+  }
+  &_right{
+    width:280px;
+    margin-left:-280px;
+  }
+  &_imgShow{
+    a{ width: 100%; }
+  }
+  .main_index_cnt_right_imgShow_2{ display: none;}
+}

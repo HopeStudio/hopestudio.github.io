@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../css/ie.css"/>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="../css/ie67.css"/>
+    <![endif]-->
+</head>
+<body>
+<div class="hope_pager_web">
+    <div id="hopePager" class="inputPager">
+        <div class="inputPager_des"> 共33条记录 第1/6页 该页显示6条</div>
+        <div class="inputPager_page"><a disabled="disabled" class="p_1st">第一页 </a>
+            <a disabled="disabled" class="p_pre">上一页 </a><a class="p_cur">1</a>
+            <a href="#" class="p_num">2</a>
+            <a href="#" class="p_num">3</a>
+            <a href="#" class="p_num">4</a>
+            <a href="#" class="p_num">5</a>
+            <a href="#" class="p_next">下一页 </a>
+            <a href="#" class="p_last">最后一页 </a>
+            <script type="text/javascript" language="javascript">
+                function GotoPage()
+                {
+                    var num = document.getElementById("pageNum").value;
+                    window.location.href="exampleURL/Index_" + num + ".aspx";}</script>
+            <input name="pageNum" id="pageNum"
+                   onkeypress="if(event.keyCode==13){GotoPage();}" type="text" value="1"/>
+            <input name="btnPage" class="btnPage" id="btnPage"
+                   onclick="GotoPage();" type="button" value="GO" />
+        </div>
+    </div>
+</div>
+
+<div class="hope_pager_mobile">
+    <div id="hopePager" class="inputPager">
+        <div class="inputPager_des"> 共33条记录 第1/6页 该页显示6条</div>
+        <div class="inputPager_page"><a disabled="disabled" class="p_1st"><< </a>
+            <a disabled="disabled" class="p_pre">< </a>
+            <a class="p_cur">1</a><a href="#" class="p_num">2</a>
+            <a href="#" class="p_num">3</a>
+            <a href="#" class="p_num">4</a>
+            <a href="#" class="p_num">5</a>
+            <a href="#" class="p_next">> </a>
+            <a href="#" class="p_last">>> </a>
+            <script type="text/javascript" language="javascript">
+                function GotoPage()
+                {
+                    var num = document.getElementById("pageNum").value;
+                    window.location.href="exampleURL/Index_" + num + ".aspx";}</script>
+            <input name="pageNum" id="pageNum"
+                   onkeypress="if(event.keyCode==13){GotoPage();}" type="text" value="1"/>
+            <input name="btnPage" class="btnPage" id="btnPage"
+                   onclick="GotoPage();" type="button" value="GO" />
+        </div>
+    </div>
+</div>
+</body>
+</html>
