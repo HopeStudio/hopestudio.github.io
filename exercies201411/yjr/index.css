@@ -1,0 +1,200 @@
+/* css reset */
+* {margin:0; padding:0; font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit;}
+img {border:0;}
+:focus {outline:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
+/*@purpose To enable resizing for IE */
+/*@branch For IE6-Win, IE7-Win */
+input, button, textarea, select {*font-size:100%;}
+input {background:transparent; border:none;}
+body {font:14px/1.6 Helvetica, Arial, sans-serif;}
+/*body {font:14px/1.6 Arial, Helvetica, sans-serif,"SimSun","LiHei Pro Medium";}*/
+a {text-decoration:none; color:#000;}
+ol, ul {list-style:none;}
+button {border:none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse:collapse; border-spacing:0;}
+:link, :visited {text-decoration:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+
+body{
+    background:#fcf7f1;
+    font-family: "Microsoft YaHei",微软雅黑,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.hope_head{
+    padding:25px 54px;
+    overflow:hidden;
+    border-bottom:2px solid #f3efea;
+}
+.hope_head_logo{
+    float:left;
+}
+.hope_head_subNav{
+    float:right;
+    margin-top:15px;
+}
+.hope_head_subNav ul li{
+    float:left;
+    margin-left:25px;
+}
+.hope_nav{
+    padding:15px 40px 15px 20px;
+    box-shadow:2px 2px 2px #919293;
+    content:"";
+    display:block;
+}
+.hope_nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.hope_nav_innerNav{
+    float:left;
+}
+.hope_nav_innerNav ul li{
+    float:left;
+    margin-left:40px;
+    font-size:16px;
+}
+.hope_nav_search{
+    float: right;
+    width: 220px;
+    height: 30px;
+}
+.hope_nav_search_f_l{
+    border:1px solid #bd9d6b;
+    padding:5px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #FFF;
+    float:left;
+    height: 18px;
+}
+.hope_nav_search_f_r{
+    border:1px solid #bd9d6b;
+    float:left;
+    border-radius: 0 10px 10px 0;
+    width: 36px;
+    height: 30px;
+    border-left-style:none;
+    background:url(images/search.bmp) no-repeat #bd9d6b 8px 5px;
+}
+.hope_slider img{
+    width:100%;
+}
+#hope_slider_indSlider{
+    position:relative;
+    width:100%;
+    height:100%;
+    min-height:566px; z-index:1;
+}
+#hope_slider_indSlider ul li {
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:0;
+    top:0;
+}
+#preBtn {
+    position:absolute;
+    width:20%;
+    max-width:175px;
+    height:100%;
+    cursor:pointer;
+    z-index:2;
+    top:0;
+    left:0;
+}
+#nextBtn {
+    position:absolute;
+    width:20%;
+    max-width:175px;
+    height:100%;
+    cursor:pointer;
+    z-index:2;
+    top:0;
+    right:0;
+}
+#nextBtn.hover{
+    background:url(images/arr.png) center center no-repeat;
+}
+#preBtn.hover{
+    background:url(images/arl.png) center center no-repeat;
+}
+.hope_show{
+    padding:30px 60px 40px;
+    overflow:hidden;
+}
+.hope_show_time{
+    overflow:hidden;
+    float:left;
+}
+.hope_show_time_title img{
+    float:left;
+    margin-right:5px;
+}
+.hope_show_time_title_more{
+    float:right;
+    display:block;
+    border:1px solid #bd9d6b;
+    padding:0 10px;
+    font-size:12px;
+    color:#bd9d6b;
+}
+.hope_show_time_content{
+    margin-top:23px;
+}
+.hope_show_time_content ul li{
+    float:left;
+    margin-right:15px;
+}
+.hope_show_time_content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.hope_show_time_content ul li:last-child{
+    margin-right:0;
+}
+.hope_show_news{
+    margin-left:23px;
+    float:right;
+    width:380px;
+}
+.hope_show_news_content{
+    margin-top:23px;
+}
+.hope_show_news_content ul li{
+    border-bottom:1px dashed #d9c19c;
+}
+.hope_show_news_content ul li a{
+line-height:30px;
+}
+.hope_show_news_content ul li span{
+    float:right;
+}
+.hope_show_news_content_point{
+    height:4px;
+    width:4px;
+    background:#d9c19c;
+    float:left;
+    margin-top: 12px;
+    margin-right: 6px;
+}
+.hope_footer{
+    background:#33312e;
+    color:white;
+    overflow:hidden;
+    padding:25px 60px 10px;
+    line-height:33px;
+}
+.hope_footer a{
+    color:white;
+}
+.hope_footer_left{
+    float:left;
+}
+.hope_footer_right{
+    float:right;
+}
+
