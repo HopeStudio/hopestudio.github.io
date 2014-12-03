@@ -121,7 +121,19 @@ a.main_index_cnt_title_content{
     &_imgShow{
       padding:7px 0;
       overflow: hidden;
-      a{  display: block;line-height: 0;float: left;width:100%;height:79px;@include LargePhone{width:48%;} @include SmallDesk{width: 100%;}}
+      a{  
+		display: block;
+		line-height: 0;
+		float: left;
+		width:100%;
+		@include LargePhone{
+			width:48%;
+		} 
+		@include SmallDesk{
+			width: 100%;
+			height:79px;
+		}
+	  }
       .main_index_cnt_right_imgShow_2{ margin-top:10px;@include LargePhone{ margin-left:4%;margin-top:0; }@include SmallDesk{ display: none; } }
       img{ height:100%;width:100%; }
     }

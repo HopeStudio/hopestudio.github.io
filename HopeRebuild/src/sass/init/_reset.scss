@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal;}
 //@branch For IE6-Win, IE7-Win
 input, button, textarea, select {*font-size:100%;}
 input {background:transparent; border:none;}
+input[type=submit]{cursor:pointer;}
 body {font:14px/1.5 Helvetica, Arial, sans-serif;}
 ol, ul ,li{list-style:none;}
 button {border:none;}
