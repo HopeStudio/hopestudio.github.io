@@ -78,11 +78,14 @@ a.main_index_show_item_title{
   }
 }
 .main_index_show_share{
+	display:none;
+	@include SmallDesk{
+		display:block;
+	}
 	float:right;
-	width:320px;
 	height:32px;
 	line-height:32px;
-	padding:10px 0;
+	padding:13px 0 7px 0;
 }
 //index_cnt
 a.main_index_cnt_title_content{ 
