@@ -127,7 +127,7 @@
   @include SmallDesk{
     width:auto;
     a{
-      padding:0 $headerWrap_nav_list_item_padding_horizontal - 6px;
+      padding:0 $headerWrap_nav_list_item_padding_horizontal - 8px;
       &:hover{
         background: none;
       }

@@ -1,0 +1,38 @@
+.main_icon{
+	background-image:url(../images/icon.png);
+	display:inline-block;
+}
+%index_show_icon_size{
+	width:30px;
+	height:32px;
+}
+.main_icon_Earth{
+	background-position:0 0;
+	@extend %index_show_icon_size;
+}
+.main_icon_Code{
+	background-position:0 -32px;
+	@extend %index_show_icon_size;
+}
+.main_icon_Book{
+	background-position:0 -64px;
+	@extend %index_show_icon_size;
+}
+.main_icon_Operation{
+	background-position:0 -96px;
+	@extend %index_show_icon_size;
+}
+.main_icon_Camera{
+	background-position:0 -128px;
+	@extend %index_show_icon_size;
+}
+.main_icon_NewArt{
+	background-position:0 -165px;
+	width:26px;
+	height:30px;
+}
+.main_icon_Design{
+	background-position:0 -195px;
+	width:26px;
+	height:30px;
+}
