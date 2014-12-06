@@ -33,3 +33,15 @@
 .main_index_show_share{
 	display:block;
 }
+//main_box
+.main_box_right{
+    display:block;
+}
+.main_box_body{
+    margin-right:$main_box_right_width;
+}
+.main_box_section{
+    padding-right:30px;
+    border-right:1px solid $main_box_border_color;
+}
+

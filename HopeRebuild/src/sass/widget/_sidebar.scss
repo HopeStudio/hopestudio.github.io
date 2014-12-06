@@ -67,14 +67,17 @@
   background:$sidebar_section_title_bg;
   text-align:center;
   font-weight:bold;
+  display:block;
 }
 .hope_sidebar_section_content{
   padding-top:12px;
+  overflow:hidden;
 }
 //tag
 .hope_sidebar_tag{
-  display:inline-block;
-  padding:0 14px;
+  display:block;
+  float:left;
+  width:($sidebar_width - 4px * 6)/3;
   line-height:25px;
   text-align: center;
   margin:0 4px 12px;

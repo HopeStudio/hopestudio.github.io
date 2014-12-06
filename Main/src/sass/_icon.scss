@@ -1,5 +1,6 @@
 .main_icon{
 	background-image:url(../images/icon.png);
+    background-repeat:no-repeat;
 	display:inline-block;
 }
 %index_show_icon_size{
@@ -35,4 +36,39 @@
 	background-position:0 -195px;
 	width:26px;
 	height:30px;
+}
+.main_icon_HotArts{
+    background-position:0 -311px;
+    width:24px;
+    height:16px;
+    vertical-align:-3px;
+}
+.main_icon_HotTags{
+    background-position:0 -327px;
+    width:24px;
+    height:16px;
+    vertical-align:-3px;
+}
+.main_icon_New{
+    background-position:0 -415px;
+    width:32px;
+    height:32px;
+}
+.main_icon_Col{
+    background-position:0 -295px;
+    width:24px;
+    height:16px;
+    vertical-align:middle;
+}
+.main_icon_Right{
+    vertical-align:middle;
+    background-position:0 -343px;
+    width:18px;
+    height:16px;
+}
+.main_icon_Top{
+    vertical-align:middle;
+    background-position:0 -360px;
+    width:18px;
+    height:16px;
 }

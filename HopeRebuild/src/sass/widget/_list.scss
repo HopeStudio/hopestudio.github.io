@@ -6,6 +6,11 @@
     border:none;
   }
 }
+.hope_list_TextCenter{
+    .hope_list_item_content{
+        text-align:center;
+    }
+}
 //list_item
 .hope_list_item{
   line-height:$list_linehieght;
@@ -17,6 +22,10 @@
 .hope_list_time{
   float:right;
   margin-left:$list_time_margin_left;
+}
+.hope_list_viewers{
+	float:right;
+	margin-left:$list_viewers_margin_left;
 }
 //hope_list_item_content
 .hope_list_item_contentBox{
@@ -57,3 +66,34 @@
   margin-right:$list_style_margin_right - $list_style_icon_size;
 }
 
+.hope_newArts_item{
+    margin-bottom: 20px;
+    border-bottom: solid 1px #d9d9d9;
+}
+.hope_newArts_item_header{
+    overflow:hidden;
+}
+.hope_newArts_viewer{
+    float:right;
+    margin-left:5px;
+    background:#bfbfbf;
+    color:#fff;
+    font-size:14px;
+    border-radius:3px;
+    line-height:20px;
+    padding:0 3px;
+}
+.hope_newArts_title{
+    overflow:hidden;
+    font-weight:bold;
+    line-height:24px;
+    height:32px;
+    @extend %text_ellipsis;
+}
+a.hope_newArts_title{
+    color:#010101;
+}
+.hope_newArts_item_con{
+    margin-bottom:10px;
+    @extend %text_ellipsis;
+}
