@@ -25,8 +25,8 @@ blockquote:before, blockquote:after, q:before, q:after {content:''; content:none
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #d9d9d9;
-    background-image: url("imgs/header_bg.jpg");
-    box-shadow:0 0 2px;
+    background-image: url("../imgs/header_bg.jpg");
+    box-shadow:0 0 2px;/*<!-- IE8 -->*/
 }
 .hope_headerWrap_culture_header {
     position: relative;
@@ -62,7 +62,7 @@ blockquote:before, blockquote:after, q:before, q:after {content:''; content:none
     height: 46px;
     border-top: 1px solid #e0dbce;
     border-bottom: 1px solid #bfbdbe;
-    box-shadow: 0 1px 2px #bfbfbf;
+    box-shadow: 0 1px 2px #bfbfbf;/*<!-- IE8 -->*/
 }
 .hope_headerWrap_culture_nav .container{
     max-width: 1205px;
@@ -85,7 +85,7 @@ blockquote:before, blockquote:after, q:before, q:after {content:''; content:none
     height: 30px;
     padding-left: 10px;
     border: 1px solid #e0d3b3;
-    border-radius: 10px 12px 12px 10px;
+    border-radius: 10px 12px 12px 10px;/*<!-- IE8 -->*/
     background-color: #ffffff;
 }
 .hope_search{
@@ -96,27 +96,28 @@ blockquote:before, blockquote:after, q:before, q:after {content:''; content:none
 .hope_search_inputBox{
     overflow: hidden;
 }
-.hope_search_input {
+.hope_search_input {/*<!-- IE8 -->*/
     font-size:14px;
     color:#ababab;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: 100%;
-    padding: 3px 5px;
+    /*padding: 3px 5px;*/
+    padding-top: 8px;
     height: 30px;
 }
 .hope_search_searchBtn_bg{
     background-color:#bd9d6b;
-    border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;/*<!-- IE8 -->*/
     float:right;
     width:36px;
     height:30px;
 }
 .hope_search_searchBtn {
-    background:url("imgs/icon_search.png") center no-repeat;
+    background:url("../imgs/icon_search.png") center no-repeat;
     cursor:pointer;
     overflow: hidden;
     display: block;
-    border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;/*<!-- IE8 -->*/
     width:36px;
     height:30px;
 }
@@ -182,14 +183,14 @@ li.L2.addBg a {
 #indSlider ul li {position:absolute; height:100%; width:100%; z-index:0; top:0;}
 #preBtn {position:absolute; width:20%; max-width:175px; height:100%; cursor:pointer; z-index:2; top:0; left:0;}
 #nextBtn {position:absolute; width:20%; max-width:175px; height:100%; cursor:pointer; z-index:2; top:0; right:0;}
-#nextBtn.hover{background:url(imgs/arr.png) center center no-repeat;}
-#preBtn.hover{background:url(imgs/arl.png) center center no-repeat;}
+#nextBtn.hover{background:url(../imgs/arr.png) center center no-repeat;}
+#preBtn.hover{background:url(../imgs/arl.png) center center no-repeat;}
 
 /*show_left*/
 .hope_culture_showBox {
     min-height:204px;
     padding:26px 15px 0 15px;
-    background:url("imgs/header_bg.jpg");
+    background:url("../imgs/header_bg.jpg");
 }
 .hope_culture_show {
     max-width:1205px;
@@ -211,7 +212,7 @@ li.L2.addBg a {
     height:28px;
     line-height:28px;
     text-indent:30px;
-    background:url("imgs/icon_camera.png") left no-repeat;
+    background:url("../imgs/icon_camera.png") left no-repeat;
 }
 .hope_culture_show_title h2 a {
     font-family:"Microsoft Yahei";
@@ -232,7 +233,7 @@ li.L2.addBg a {
     font-weight:bold;
     font-size:12px;
     border:1px solid #d2b27f;
-    border-radius:2px;
+    border-radius:2px;/*<!-- IE8 -->*/
     color:#d2b27f;
 }
 .hope_culture_show_more:hover {
@@ -283,6 +284,7 @@ li.L2.addBg a {
 }
 .hope_list_item {
     line-height: 30px;
+    height: 30px;
     overflow: hidden;
 }
 .hope_list_style {
@@ -295,7 +297,7 @@ li.L2.addBg a {
 }.hope_list_item_contentBox {
      overflow: hidden;
  }
-.hope_list_item_content {
+.hope_list_item_content {/*<!-- IE8 -->*/
     width: 100%;
     display: block;
     overflow: hidden;
@@ -317,9 +319,10 @@ li.L2.addBg a {
 
 /*Footer*/
 .hope_footer {
+    clear: both;
     width:100%;
     margin:0 auto;
-    background-color:#33312e;
+    background-color: #000000;
 }
 .hope_copyright {
     height:auto;
