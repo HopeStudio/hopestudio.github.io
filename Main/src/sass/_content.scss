@@ -1,0 +1,13 @@
+.main_article{
+    @include SmallDesk{
+        padding-right:30px;
+        border-right:1px solid $main_box_border_color;
+    }
+    .hope_article_title{
+        font-size: 20px;
+        font-weight:normal;
+    }
+    .hope_article_preNext{
+        color:#000;
+    }
+}

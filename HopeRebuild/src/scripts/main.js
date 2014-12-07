@@ -196,6 +196,28 @@
         )
       }
     },
+    contentReplace:function(selector,oldContent,newContent){
+        var selector=selector||document;
+       for(var i=0;i<selector.length;i++){
+          var current=selector.eq(i);
+          var reg=new RegExp(oldContent);
+          if(current.html().match(reg)){
+             current.html(current.html().replace(new RegExp(oldContent),newContent));
+         }
+      }
+        return this;
+    },
+    pagerHandler:function(){
+        /*$.ContentReplace($(".hope_page_web a"),"上一页","< 上一页")
+        .ContentReplace($(".hope_page_web a"),"下一页","下一页 >")
+        .ContentReplace($(".hope_page_web a"),"第一页","<< 第一页")
+        .ContentReplace($(".hope_page_web a"),"最后一页","最后一页 >>")*/
+        $.ContentReplace($(".hope_page_mobile a"),"上一页","<")
+        .ContentReplace($(".hope_page_mobile a"),"下一页",">")
+        .ContentReplace($(".hope_page_mobile a"),"第一页","<<")
+        .ContentReplace($(".hope_page_mobile a"),"最后一页",">>");
+
+    },
     headerClickToggler:function(toggler){
       $("#"+toggler).bind("click",
         function(){$("#"+toggler+"_data").toggle(300)}

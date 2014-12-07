@@ -55,6 +55,23 @@
         padding-right:30px;
         border-right:1px solid $main_box_border_color;
     }
+    .main_page_web{
+        a{
+            color:#cf5d53;
+            &:hover{
+                background-color:#cf5d53;
+            }
+        }
+        a.p_cur{
+            background-color:#cf5d53;
+            color:#fff;
+        }
+    }
+    .main_page_mobile{
+        a{
+            color:#cf5d53;
+        }
+    }
 }
 .main_box_section_header{
     overflow:hidden;
