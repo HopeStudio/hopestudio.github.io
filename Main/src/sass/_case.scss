@@ -1,0 +1,85 @@
+@mixin CaseThree{
+    @media (min-width:960px){
+        @content;
+    }
+}
+@mixin CaseTwo{
+    @media (min-width:645px){
+        @content;
+    }
+}
+
+
+//case_slider
+.case_slider{
+	border-bottom:3px solid $main_a_hover_color;
+}
+.case_slider_list_item_1{
+	background-image:url(../images/sliders/1200/case_slider_1.jpg);
+}
+.case_slider_list_item_2{
+	background-image:url(../images/sliders/1200/case_slider_2.jpg);
+}
+.case_slider_list_item_3{
+	background-image:url(../images/sliders/1200/case_slider_3.jpg);
+}
+.case{
+    .case_container{
+        width:$case_index_item_width + 2px;
+        padding:0;
+        @include CaseTwo{
+            width:634px;
+        }
+        @include CaseThree{
+            width:960px;
+        }
+    }
+}
+//case_index
+.case_index{
+    margin-left:-1 * $case_index_item_space / 2;
+    margin-right:-1 * $case_index_item_space / 2;
+    padding:10px 0;
+    overflow:hidden;
+}
+.case_index_item{
+    width:$case_index_item_width - 20px;
+    border:1px solid #b5b5b5;
+    padding:14px 10px 5px 10px;
+    margin:10px 9px;
+    float:left;
+    background:#fff;
+    position:relative;
+    &:after{
+        content:'';
+        display:block;
+        background:url(../images/case/case_box_shadow.png) no-repeat;
+        position:absolute;
+        height:6px;
+        width:$case_index_item_width + 2px;
+        right:-1px;
+        bottom:-7px;
+    }
+}
+.case_index_item_img{
+    display:block;
+    height:181px;
+    line-height:0;
+    text-align:center;
+    margin-bottom:10px;
+    img{ height:100%;width:auto; }
+}
+.case_index_item_title_Zh,.case_index_item_title_En{
+    display:block;
+    text-align:center;
+    line-height:25px;
+    font-family: "Microsoft YaHei";
+}
+.case_index_item_title_Zh{
+    font-size:18px;
+    font-weight:bold;
+}
+.case_index_item_title_En{
+    font-size:16px;
+}
+

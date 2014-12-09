@@ -196,7 +196,7 @@
         )
       }
     },
-    contentReplace:function(selector,oldContent,newContent){
+    CcontentReplace:function(selector,oldContent,newContent){
         var selector=selector||document;
        for(var i=0;i<selector.length;i++){
           var current=selector.eq(i);
