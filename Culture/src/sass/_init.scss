@@ -1,0 +1,8 @@
+.culture{
+	background:#33312e;
+	a{
+		&:hover{
+			color:$culture_a_hover_color;
+		}
+	}
+}

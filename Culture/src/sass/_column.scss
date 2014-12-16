@@ -1,0 +1,120 @@
+/*
+.culture_banner{
+    margin-top:20px;
+    &_img{
+        float:left;
+        margin-right:10px;
+    }
+}
+
+
+.main_banner{
+    line-height:0;
+    img{ width:100%;  }
+}
+.main_box{
+    margin-bottom:20px;
+    &_content{
+        padding:0 30px 25px 30px;
+        overflow:hidden;
+        background:$main_box_bg_color;
+        border:1px solid $main_box_border_color;
+    }
+    &_shadow{
+        background-image:url(../images/box_shadow.gif);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        height:10px;
+    }
+
+    &_left{
+        float:left;
+        width:100%;
+    }
+    &_right{
+        display:none;
+        margin-left:-1 * $main_box_right_width;
+        width:$main_box_right_width;
+        float:left;
+        position:relative;
+        @include SmallDesk{
+            display:block;
+        }
+    }
+}
+.main_box_right:before{
+    position:absolute;
+    content:'';
+    display:block;
+    left:-1px;
+    top:0;
+    bottom:0;
+    width:0;
+    border-left:1px solid $main_box_border_color;
+}
+
+.main_box_body{
+    margin-right:0;
+    @include SmallDesk{
+        margin-right:$main_box_right_width;
+    }
+}
+
+.main_box_section{
+    @include SmallDesk{
+        padding-right:30px;
+        border-right:1px solid $main_box_border_color;
+    }
+    .main_page_web{
+        a{
+            color:#cf5d53;
+            &:hover{
+                background-color:#cf5d53;
+            }
+        }
+        a.p_cur{
+            background-color:#cf5d53;
+            color:#fff;
+        }
+    }
+    .main_page_mobile{
+        a{
+            color:#cf5d53;
+        }
+    }
+}
+.main_box_section_header{
+    overflow:hidden;
+    margin-bottom:10px;
+    border-bottom:1px dashed #d90000;
+}
+.main_box_section_more{
+    float:right;
+    margin-left:5px;
+}
+.main_box_section_title{
+    overflow:hidden;
+    display:block;
+    font-weight:bold;
+    .hope_list_style{
+        width:6px;
+        height:6px;
+        background:#d90000;
+    }
+    &_cnt{
+        display:block;
+        @extend %text_ellipsis;
+    }
+}
+.main_box_section_cnt{
+    margin-bottom:12px;
+}
+
+.main_box_right{
+    a.hope_list_item_content:hover{
+        cursor:pointer;
+        .main_icon_Right{
+            background-position:0 -360px;
+        }
+    }
+}*/

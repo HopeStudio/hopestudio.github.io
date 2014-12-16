@@ -1,0 +1,51 @@
+.culture_logo{
+    display:block;
+    width:159px;
+    height:40px;
+    background:url(../images/cullogo.png) no-repeat;
+}
+.culture_headerWrap{
+	background:#faf4e8 url(../images/header_bg.jpg) repeat;
+	position:relative;
+	z-index:100;
+    .icon_toggler{
+        border-color:$culture_a_hover_color;
+    }    
+    .fi_search_left{
+        color:$culture_a_hover_color;
+    }
+    .icon_bar{
+        background:$culture_a_hover_color;
+    }
+}
+.culture_linkTo{
+    font-family:"Microsoft Yahei";
+    margin-left:24px;
+}
+a.culture_linkToSelf{
+    color:$culture_a_hover_color;
+}
+.culture_headerWrap_nav_list_item{
+    a{
+        color:$culture_nav_list_item_font_color; 
+    }
+	a:hover{
+		color:$culture_nav_list_item_hover_font_color;
+		background:$culture_nav_list_item_hover_bg_color !important;
+	}
+}
+.culture_headerWrap_nav_dropdown{
+    background:#faf4e8;
+}
+.culture_headerWrap_nav_dropdown_item{
+	a{
+		line-height:38px;
+	}
+}
+.culture_search{
+    border:1px solid #e0d3b3;
+    .hope_search_searchBtn{
+        background-color:#bd9d6b;
+    }
+}
+
