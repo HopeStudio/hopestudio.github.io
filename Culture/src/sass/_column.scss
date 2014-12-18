@@ -1,120 +1,97 @@
-/*
+@import "var";
+@import "mixin/mixin";
+
+@mixin Cul-2{
+    @media (min-width:596px){
+        @content
+    } 
+}
+@mixin Cul-3{
+    @media (min-width:898px){
+        @content
+    } 
+}
+@mixin Cul-4{
+    @media (min-width:1202px){
+        @content
+    } 
+}
+
+
+.culture_box{
+    background:#f5f4f2;
+    padding:20px 0;
+    .hope_card{
+        padding-bottom:20px;
+    }
+}
+.culture_container{
+    padding:0 20px;
+    max-width:1202px;
+    margin:0 auto;
+}
+/* banner location */
 .culture_banner{
-    margin-top:20px;
+    line-height:0;
+    border-bottom:1px solid #d9d9d9;
+    padding-bottom:20px;
+    position:relative;
+    @include Cul-3{
+        width:898px;
+        margin:0 auto;
+    }
+    @include Cul-4{
+        width:1202px;
+        &:after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+    }
     &_img{
-        float:left;
+        display:block;
+        img{
+            width:100%;
+        }
+        @include Cul-4{
+            width:900px;
+            float:left;
+        }
+    }
+    &_joinus{
+        display:none;
+        @include Cul-4{
+            text-align:right;
+            display:block;    
+            overflow:hidden;
+        }
+    }
+}
+.culture_location{
+    max-width:1202px;
+    margin:0 auto 20px auto;
+    line-height:36px;
+    border-bottom:1px solid #d9d9d9;
+    position:relative;
+    .cul_icon{
+        vertical-align:-7px;
         margin-right:10px;
     }
 }
-
-
-.main_banner{
-    line-height:0;
-    img{ width:100%;  }
+.culture_banner:before,.culture_location:after{
+	content:'';
+	display:block;
+	position:absolute;
+	left:0;
+	right:0;
+	height:0;
+	bottom:-2px;
+	border-bottom:1px solid #fff;
 }
-.main_box{
-    margin-bottom:20px;
-    &_content{
-        padding:0 30px 25px 30px;
-        overflow:hidden;
-        background:$main_box_bg_color;
-        border:1px solid $main_box_border_color;
-    }
-    &_shadow{
-        background-image:url(../images/box_shadow.gif);
-        background-repeat:no-repeat;
-        background-size:100% 100%;
-        height:10px;
-    }
-
-    &_left{
-        float:left;
-        width:100%;
-    }
-    &_right{
-        display:none;
-        margin-left:-1 * $main_box_right_width;
-        width:$main_box_right_width;
-        float:left;
-        position:relative;
-        @include SmallDesk{
-            display:block;
-        }
-    }
-}
-.main_box_right:before{
-    position:absolute;
-    content:'';
+.culture_sectionTitle{
+    font-family: "Microsoft Yahei";
+    font-size: 20px;
+    color: #bd9d6b;
     display:block;
-    left:-1px;
-    top:0;
-    bottom:0;
-    width:0;
-    border-left:1px solid $main_box_border_color;
+    padding-bottom:20px;
 }
-
-.main_box_body{
-    margin-right:0;
-    @include SmallDesk{
-        margin-right:$main_box_right_width;
-    }
-}
-
-.main_box_section{
-    @include SmallDesk{
-        padding-right:30px;
-        border-right:1px solid $main_box_border_color;
-    }
-    .main_page_web{
-        a{
-            color:#cf5d53;
-            &:hover{
-                background-color:#cf5d53;
-            }
-        }
-        a.p_cur{
-            background-color:#cf5d53;
-            color:#fff;
-        }
-    }
-    .main_page_mobile{
-        a{
-            color:#cf5d53;
-        }
-    }
-}
-.main_box_section_header{
-    overflow:hidden;
-    margin-bottom:10px;
-    border-bottom:1px dashed #d90000;
-}
-.main_box_section_more{
-    float:right;
-    margin-left:5px;
-}
-.main_box_section_title{
-    overflow:hidden;
-    display:block;
-    font-weight:bold;
-    .hope_list_style{
-        width:6px;
-        height:6px;
-        background:#d90000;
-    }
-    &_cnt{
-        display:block;
-        @extend %text_ellipsis;
-    }
-}
-.main_box_section_cnt{
-    margin-bottom:12px;
-}
-
-.main_box_right{
-    a.hope_list_item_content:hover{
-        cursor:pointer;
-        .main_icon_Right{
-            background-position:0 -360px;
-        }
-    }
-}*/

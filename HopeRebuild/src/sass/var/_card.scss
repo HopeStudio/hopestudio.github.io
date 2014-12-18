@@ -1,12 +1,12 @@
-$card_width_1:310px;
-$card_width_2:620px;
-$card_width_3:930px;
-$card_width_4:1240px;
-
+$card_margin_horizontal:7px;
+$card_margin_bottom:20px;
+$card_width:290px;
 $card_border_color:#ccc;
 $card_color_bg:#fff;
-
-$card_margin_horizontal:10px;
 $card_padding_horizontal:6px;
-$card_width:$card_width_1 - 2 * $card_margin_horizontal;
-$card_content_width:$card_width_1 - 2 * $card_margin_horizontal - 2 * $card_padding_horizontal;
+
+$card_width_1:$card_width + 2 * $card_margin_horizontal;
+$card_width_2:$card_width * 2 + 4 * $card_margin_horizontal;
+$card_width_3:$card_width * 3 + 6 * $card_margin_horizontal;
+$card_width_4:$card_width * 4 + 8 * $card_margin_horizontal;
+$card_content_width:$card_width - 2 * $card_padding_horizontal;

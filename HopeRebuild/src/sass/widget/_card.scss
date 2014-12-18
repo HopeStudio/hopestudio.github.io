@@ -62,7 +62,7 @@
 .hope_card_item{
   background: $card_color_bg;
   float:left;
-  margin:0 $card_margin_horizontal $card_margin_horizontal;
+  margin:0 $card_margin_horizontal $card_margin_bottom $card_margin_horizontal;
   width:$card_content_width;
   position: relative;
   overflow: hidden;
@@ -114,6 +114,7 @@
 //info
 .hope_card_info{
   overflow: hidden;
+  padding-bottom:$card_padding_horizontal;
 }
 .hope_card_info_item{
   color: #b2b2b2;
@@ -125,6 +126,11 @@
   margin-left:10px;
   height: 18px;
   line-height: 18px;
+  .hope_icon{
+    display:inline-block;
+    vertical-align:-5px;
+    margin-right:3px;
+  }
 }
 //title
 .hope_card_title{

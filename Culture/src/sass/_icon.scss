@@ -12,6 +12,7 @@ $icon_height_default:40px;
 	background-size: image-width(sprite-path($icons)) image-height(sprite-path($icons));
 	width:$icon_width_default;
 	height:$icon_height_default;
+    display:inline-block;
 }
 
 @each $item in sprite-names($icons) {
