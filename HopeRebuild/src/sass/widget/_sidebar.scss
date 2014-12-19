@@ -43,10 +43,33 @@
     }
   }
 }
+.hope_sidebar_StyleCul{
+  .hope_sidebar_img_word{
+    color:$sidebar_color_cul;
+  }
+  .hope_sidebar_section_title{
+    color:$sidebar_color_cul;
+  }
+  .hope_sidebar_tag{
+    color:$sidebar_tag_font_color;
+    &:hover{
+      color:$sidebar_color_cul;
+    }
+  }
+
+  .hope_list_item_content{
+    &:hover{
+      color:$sidebar_color_cul;
+    }
+  }
+}
 //img
 .hope_sidebar_img{
   width:100%;
   position: relative;
+  display:block;
+  line-height:0;
+  margin-bottom:5px;
   img{
     width:100%;
   }
@@ -56,6 +79,7 @@
   bottom:10px;
   right:5px;
   font-size:12px;
+  line-height:14px;
   display: block;
 }
 //section

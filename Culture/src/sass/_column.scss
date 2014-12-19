@@ -25,10 +25,33 @@
         padding-bottom:20px;
     }
 }
-.culture_container{
-    padding:0 20px;
-    max-width:1202px;
+.culture_column_container{
+    width:290px;
     margin:0 auto;
+    @include Cul-2{
+        width:596px;
+    }
+    @include Cul-3{
+        width:898px;
+    }
+    @include Cul-4{
+        width:1202px;
+    }
+}
+.culture_column_row{
+    padding:0 20px;
+    margin:0 auto;
+    @include Cul-2{
+        padding:0;
+        width:596px;
+    }
+    @include Cul-3{
+        width:898px;
+    }
+    @include Cul-4{
+        width:1202px;
+    }
+    
 }
 /* banner location */
 .culture_banner{
@@ -88,10 +111,30 @@
 	bottom:-2px;
 	border-bottom:1px solid #fff;
 }
-.culture_sectionTitle{
+a.culture_sectionTitle{
     font-family: "Microsoft Yahei";
     font-size: 20px;
     color: #bd9d6b;
     display:block;
     padding-bottom:20px;
+}
+
+.culture_column_goTop{
+    position:fixed;
+    _position: absolute;
+    margin-left:159px;
+    @include Cul-2{
+        margin-left:311px;
+    }
+    @include Cul-3{
+        margin-left:463px;
+    }
+    @include Cul-4{
+        margin-left:615px;
+    }
+    left: 50%;
+    bottom: 132px;
+    cursor: pointer;
+    _display: none;
+    z-index: 100;
 }

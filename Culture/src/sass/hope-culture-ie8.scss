@@ -12,7 +12,7 @@
         width:33.3333%;
     }
 }
-.culture_container{
+.culture_column_container,.culture_column_row{
     width:898px;
 }
 .culture_location{
@@ -26,4 +26,44 @@
         float:left;
         margin-top:-2px;
     }
+}
+.culture_banner{
+    width:898px;
+}
+.culture_box{
+    .hope_card{
+        width:912px;
+    }
+}
+.culture_column_goTop{
+    margin-left:463px;
+}
+//content
+
+.culture_con_box{
+    overflow:hidden;
+    margin-right:224px;
+    padding-right:24px;
+    border-right:1px solid #d9d9d9;
+}
+.culture_con_right{
+    float:left;
+    display:block;
+    width:224px;
+    margin-left:-224px;
+    position:relative;
+    &:before{
+        position:absolute;
+        content:'';
+        display:block;
+        left:-1px;
+        top:0;
+        bottom:0;
+        width:0;
+        border-left:1px solid #d9d9d9;
+    }
+}
+.culture_con_left{
+    width:100%;
+    float:left;
 }

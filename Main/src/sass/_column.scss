@@ -46,6 +46,7 @@
 .main_box_body{
     margin-right:0;
     @include SmallDesk{
+        overflow:hidden;
         margin-right:$main_box_right_width;
     }
 }
