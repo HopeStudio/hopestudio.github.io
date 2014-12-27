@@ -1,0 +1,152 @@
+//internal_banner
+.internal_banner {
+  line-height: 0;
+}
+.internal_banner img {
+  width: 100%;
+}
+.internal_box_body {
+  margin-right: 0;
+  margin-top: 20px;
+  overflow: hidden;
+  @include SmallDesk {
+    margin-right: 230px;
+    border-right: 1px solid #d9d9d9;
+  }
+}
+.internal_box_left {
+  float: left;
+  width: 100%;
+}
+.internal_box_section {
+  padding: 0;
+  border: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  @include SmallDesk{padding-right: 30px;
+  }
+  &_header {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted $global_color_internal_main;
+    width:100%;
+  }
+  &_more {
+    float: right;
+    margin-left: 5px;
+  }
+  &_title {
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+  }
+  &_title_cnt {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+  &_title .hope_list_style {
+    width: 6px;
+    height: 6px;
+    background: $global_color_internal_main;
+  }
+}
+.internal_box_right {
+  display: none;
+  margin-left: -230px;
+  width: 230px;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  @include SmallDesk{display: block;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 1px solid #d9d9d9;
+  }
+}
+//Page
+.internal_page_web .inputPager_page,.internal_page_mobile .inputPager_page {
+  a{color: $global_color_column_page_a;
+    &:hover{background-color: $global_color_internal_main;
+      color: #fff;
+    }
+  }
+  .p_1st, .p_last {
+    @include SmallDesk{display: none;
+    }
+    @include MediumDesk {
+      display: block;
+    }
+  }
+}
+//Shadow_style
+.internal_box_shadow {
+  background-image: url(../../dist/images/box_shadow.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 10px;
+}
+//rightbar
+.internal_sidebar_img img {
+  border: 1px solid $global_color_border;
+}
+.internal_sidebar_section_title {
+  background-color: $global_bg_body_internal;
+}
+.hope_sidebar_StyleRed .internal_sidebar_section_title {
+  color: $global_color_a_hover;
+}
+.hope_sidebar_StyleRed .hope_list_item .hope_list_item_content:hover {
+  color: $global_color_a_hover;
+}
+.internal_sidebar_section_title_icon {
+  background: #f5f5f5 url(../../dist/images/internal-icon-sidebar.png) no-repeat;
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+}
+.internal_sidebar_section_title_icon_new {
+  background-position: 0 4px;
+}
+.internal_sidebar_section_title_icon_title {
+  background-position: 0 -72px;
+}
+.internal_list_item_contentBox{display: inline;}
+.internal_list_item_content {
+  background: url(../../dist/images/internal-icon-sidebar.png) no-repeat;
+  background-position: 47px -12px;
+}
+.internal_list_item_content:hover {
+  background-position: 47px -39px;
+}
+.internal_sidebar_section ol li {
+  list-style: decimal inside;
+  color: $global_color_a_hover;
+  a{display: inline;
+  }
+}
+//knowage
+.internal_box_linkBox {
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+.internal_box_linkBox li {
+  list-style-type: none;
+  height: 29px;
+  line-height: 29px;
+  border-bottom: 1px dotted #ccc;
+  margin-left: 15px;
+}
+//search
+.internal_list_item_content_news {
+  display: inline;
+}

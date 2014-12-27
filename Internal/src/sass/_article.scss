@@ -1,0 +1,36 @@
+.internal_article_box {
+  margin-top: 20px;
+}
+//table
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.hope_article .table {
+  border-width: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 99%
+}
+.hope_article .table th, .table td {
+  border: 1px solid #CCC;
+  text-align: center;
+  padding: 3px 5px
+}
+.hope_article .table th {
+  background-color: #EEE;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.hope_article .table .odd {
+  background-color: #EEE;
+}
+//login in
+.NeedLogin {
+  text-align: center;
+  padding: 200px 0;
+}
+.internal_article_content img{max-width:100%;height:auto;}
+
+//goTop
+#goTop{width:45px;height:45px;position:fixed;_position:absolute;left:50%;margin-left:500px;bottom:112px;cursor:pointer;_display:none;}

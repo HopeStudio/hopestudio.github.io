@@ -1,0 +1,62 @@
+//global
+.internal {
+  background-color: #f5f5f5;
+}
+.internal a:hover {
+  color: $global_color_a_hover;
+}
+.internal_container {
+  max-width: $global_frame_maxWidth;
+}
+//headerWrap
+.internal_headerWrap {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 1px 4px $global_color_boxShadow;
+  background-color: $global_bg_body_internal;
+  &_togglerIcon_item{
+    font-family: "Microsoft Yahei";
+    margin: 0 15px;
+  }
+  .hope_headerWrap_nav_list .func_flex_uniform &_nav_list_item {
+    @include MediumDesk{
+      a {padding: 0 19px;
+      }
+    }
+    a:hover {
+      color: $global_color_nav_a_hover;
+      background-color: $global_color_nav_bg_hover;
+    }
+  }
+  &_nav_dropdown {
+    background-color: $global_bg_body_internal;
+    border-top: 1px solid $global_color_border;
+    z-index: 40;
+  }
+  &_nav_list_item_firstPage {
+    display: none;
+    @include SmallDesk{display: block;
+    }
+  }
+}
+//search
+.internal_search {
+  &_inputBox{background-color: $global_color_search_input_bg;
+  }
+  &_searchBtn {
+    background-color: $global_color_search_bar_bg;
+  }
+  &_LargeHeight {
+    border-radius: 10px;
+  }
+}
+//internal_content
+.internal_box {
+  margin-bottom: 20px;
+}
+.internal_box_content {
+  padding: 0 30px 25px 30px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}

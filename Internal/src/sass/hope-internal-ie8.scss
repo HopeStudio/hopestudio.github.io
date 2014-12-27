@@ -1,0 +1,101 @@
+@import "mixin/mixin";
+@import "var";
+//Page
+.internal_box_section {
+  padding-right: 30px;
+  border-right: 1px solid #d9d9d9;
+}
+.internal_box_right {
+  display: block;
+}
+.internal_page_web .p_1st, .p_last {
+  display: block;
+}
+.internal_box_body {
+  margin-right: 230px;
+}
+//index
+//internal_index_show
+.internal_index_cnt_below {
+  &_usual_link {border: 1px solid #d9d9d9;
+    background: #f5f5f5;
+    width: 100%;
+    margin-top: 20px;
+  }
+  &_usual_list {
+    float: none;
+    border: 0;
+    background: none;
+    a {display: inline-block;
+      width: 12%;
+    }
+  }
+}
+.internal_index_show .internal_index_show_item_box .internal_index_show_item_ul_li {
+  .internal_index_show_item_ul_li_1{background-position: 5px -233px;
+  }
+  .internal_index_show_item_ul_li_2 {
+    background-position: 5px -113px;
+  }
+  .internal_index_show_item_ul_li_3 {
+    background-position: 5px -173px;
+  }
+  .internal_index_show_item_ul_li_4 {
+    background-position: 5px -293px;
+  }
+}
+.internal_index_show_item_ul_li a {
+  height: 47px;
+  padding: 0;
+  padding-left: 65px;
+  line-height: 47px;
+  margin: 15px 50px;
+  width: 70px;
+  float: left;
+}
+//internal_index_cnt
+.internal_index_cnt {
+  .internal_index_cnt_left{margin: 0;
+    .internal_index_cnt_newArticles {margin-right: 490px;
+    }
+  }
+  .internal_index_cnt_right {
+    width: 460px;
+    margin-left: -460px;
+    float: right;
+    &_imgShow{padding: 7px 0;
+      overflow: hidden;
+      a {width: 48%;
+        height: 79px;
+      }
+      .internal_index_cnt_right_imgShow_2 {
+        margin: 0px;
+        display: block;
+        float: right;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+//trees
+.internal .internal_trees_container{width:1160px!important;}
+.internal .internal_headerWrap .internal_trees_headerWrap_container{width: 1200px!important;}
+.internal_trees_location{width:1160px;}
+.internal_trees_books_list_li{width:20%;}
+.internal_trees_books_list_con{
+  img{display: block;margin:0 auto;max-width:100%;}
+  .internal_trees_books_list_title{
+    & a:hover{background: none;color:$global_color_internal_main;}
+  }
+}
+//matrix
+.internal_trees_matrix_con{
+  .internal_trees_matrix_box_left{width:330px;float: left;
+    .internal_article{display: block;padding:0 20px;font-size:16px;}
+  }
+  .internal_trees_matrix_box_right{margin-left: 330px;width:auto;float:none;
+    .internal_trees_matrix_box_right_list{border-left: 1px solid #fff;}
+    .internal_trees_matrix_box_right_list_li{width:20%;}
+  }
+}
+.internal_box_shadow{background: none;}

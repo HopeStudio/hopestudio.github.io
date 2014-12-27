@@ -1,0 +1,69 @@
+.internal_icon {
+  background: url(../../dist/images/internal_icon.png) no-repeat;
+  display: inline-block;
+}
+.internal_list_style_Square {
+  width: 4px;
+  height: 4px;
+}
+.internal_icon_NewArt {
+  background-position: 0 6px;
+  width: 26px;
+  height: 26px;
+}
+.internal_icon_Design {
+  background-position: 0 -20px;
+  width: 26px;
+  height: 26px;
+}
+.internal_index_show .internal_index_show_item_box .internal_index_show_item_ul_li {
+  .internal_index_show_item_ul_li_1{
+    @include SmallPhone{background-position: 5px -233px;
+    }
+    @include LargePhone {
+      background-position: 5px -509px;
+    }
+    @include SmallDesk {
+      background-position: 5px -233px;
+    }
+  }
+  .internal_index_show_item_ul_li_2 {
+    @include SmallPhone{background-position: 5px -113px;
+    }
+    @include LargePhone {
+      background-position: 5px -429px;
+    }
+    @include SmallDesk {
+      background-position: 5px -113px;
+    }
+  }
+  .internal_index_show_item_ul_li_3 {
+    @include SmallPhone{background-position: 5px -173px;
+    }
+    @include LargePhone {
+      background-position: 5px -349px;
+    }
+    @include SmallDesk {
+      background-position: 5px -173px;
+    }
+  }
+  .internal_index_show_item_ul_li_4 {
+    @include SmallPhone{background-position: 5px -293px;
+    }
+    @include LargePhone {
+      background-position: 5px -589px;
+    }
+    @include SmallDesk {
+      background-position: 5px -293px;
+    }
+  }
+}
+.icon_toggler {
+  border: 1px solid #5191cd;
+  .fi_search_left{
+    color: $global_color_internal_main;
+  }
+  .icon_bar {
+    background: $global_color_internal_main;
+  }
+}
