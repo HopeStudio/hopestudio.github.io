@@ -24,3 +24,15 @@
 		background:$main_nav_list_item_hover_bg_color;
 	}
 }
+.main_goTop{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    _position: absolute;
+    left: 50%;
+    margin-left: 500px;
+    bottom: 100px;
+    cursor: pointer;
+    _display: none;
+    background:url(../images/gotop.gif) no-repeat;
+}

@@ -22,22 +22,41 @@
 }
 .hope_pager_web {
   display:none;
+  #pageNum,#btnPage{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    text-align: center;
+  }
+  #pageNum{
+    width:20px;
+    margin-left:7px;
+    height:24px;
+  }
+  #btnPage{
+    background: #ccc;
+    color: #fff;
+    cursor: pointer;
+    height:26px;
+    margin-left:-4px;
+  }
 }
+
 @include SmallDesk{
   .hope_pager_web {
     display: block;
     overflow: hidden;
-    #pageNum,#btnPage,.inputPager_des{
+    .inputPager_des{
       display:none;
     }
     .inputPager_page {
       height: $pager_height;
-      margin: $pager_margin_vertical 0;
+      margin: $pager_margin_vertical auto;
       line-height: $pager_height - 2;
       float: right;
       a {
-        margin-left: 10px;
-        padding: 0 10px;
+        margin-left: 7px;
+        padding: 0 7px;
         border: 1px solid #ccc;
         background-color: #fff;
         color: $pager_color_link;

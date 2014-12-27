@@ -100,9 +100,9 @@
               clearInterval(fun);
               $(this).css("z-index","10");
               if($(this).index()==(length-1)){
-                $li.eq(0).fadeIn(100);
+                $li.eq(0).addClass("js_slider_now").animate({'opacity':1},{queue:false,duration:100}).css("z-index","5");
               }else{
-                $li.eq($(this).index()+1).fadeIn(100);
+                $li.eq($(this).index()+1).addClass("js_slider_now").animate({'opacity':1},{queue:false,duration:100}).css("z-index","5");
               }
 
             })
@@ -112,14 +112,14 @@
             })
             .on("touchend",function(e){
               e.preventDefault();
-              $(this).fadeOut(100).css("left",0).css("top",0).css("z-index","1");
+              $(this).removeClass("js_slider_now").animate({'opacity':0},{queue:false,duration:100}).css("left",0).css("top",0).css("z-index","1");
               fun = setInterval(slide,timer);
 
             })
         }
         function slide(action){
 
-          var i = id.find("li:visible").index();
+          var i = id.find(".js_slider_now").index();
           if($li.eq(i).is(":animated"))
           {
             return;
@@ -130,12 +130,12 @@
           {
             action = (action < 0)?(length -1):0;
           }
-
-          $li.eq(i).fadeOut(3000).parent().find("li").eq(action).fadeIn(1000);
+            $li.eq(i).removeClass("js_slider_now").animate({'opacity':0},{queue:false,duration:1000}).parent().find("li").eq(action).addClass("js_slider_now").animate({'opacity':1},{queue:false,duration:1000});
         }
       })(idname,pre,next,timer)
 
     },
+
 
     /**
      * tab
@@ -196,7 +196,7 @@
         )
       }
     },
-    CcontentReplace:function(selector,oldContent,newContent){
+    ContentReplace:function(selector,oldContent,newContent){
         var selector=selector||document;
        for(var i=0;i<selector.length;i++){
           var current=selector.eq(i);
@@ -212,10 +212,10 @@
         .ContentReplace($(".hope_page_web a"),"下一页","下一页 >")
         .ContentReplace($(".hope_page_web a"),"第一页","<< 第一页")
         .ContentReplace($(".hope_page_web a"),"最后一页","最后一页 >>")*/
-        $.ContentReplace($(".hope_page_mobile a"),"上一页","<")
-        .ContentReplace($(".hope_page_mobile a"),"下一页",">")
-        .ContentReplace($(".hope_page_mobile a"),"第一页","<<")
-        .ContentReplace($(".hope_page_mobile a"),"最后一页",">>");
+        $.ContentReplace($(".hope_pager_mobile a"),"上一页","<")
+        .ContentReplace($(".hope_pager_mobile a"),"下一页",">")
+        .ContentReplace($(".hope_pager_mobile a"),"第一页","<<")
+        .ContentReplace($(".hope_pager_mobile a"),"最后一页",">>");
 
     },
     headerClickToggler:function(toggler){

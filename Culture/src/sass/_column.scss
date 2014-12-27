@@ -91,6 +91,7 @@
     }
 }
 .culture_location{
+    color:#999;
     max-width:1202px;
     margin:0 auto 20px auto;
     line-height:36px;
@@ -99,6 +100,9 @@
     .cul_icon{
         vertical-align:-7px;
         margin-right:10px;
+    }
+    a{
+        color:#999;
     }
 }
 .culture_banner:before,.culture_location:after{
@@ -133,7 +137,7 @@ a.culture_sectionTitle{
         margin-left:615px;
     }
     left: 50%;
-    bottom: 132px;
+    bottom: 100px;
     cursor: pointer;
     _display: none;
     z-index: 100;

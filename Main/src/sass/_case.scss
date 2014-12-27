@@ -8,7 +8,16 @@
         @content;
     }
 }
-
+@mixin CaseDevTwo{
+    @media (min-width:$case_dev_item_width *2 + $case_dev_item_margin *2 + 20px){
+        @content
+    }
+}
+@mixin CaseDevOne{
+    @media (min-width:$case_dev_item_width + 20px ){
+        @content
+    }
+}
 
 //case_slider
 .case_slider{
@@ -34,15 +43,25 @@
             width:960px;
         }
     }
+    .case_devContainer{
+        width:$case_dev_item_minWidth;
+        padding:0;
+        @include CaseDevOne{
+            width:$case_dev_item_width;
+        }
+        @include CaseDevTwo{
+            width:( $case_dev_item_width + $case_dev_item_margin ) * 2;
+        }
+    }
 }
 //case_index
-.case_index{
+.case_list{
     margin-left:-1 * $case_index_item_space / 2;
     margin-right:-1 * $case_index_item_space / 2;
     padding:10px 0;
     overflow:hidden;
 }
-.case_index_item{
+.case_list_item{
     width:$case_index_item_width - 20px;
     border:1px solid #b5b5b5;
     padding:14px 10px 5px 10px;
@@ -61,25 +80,120 @@
         bottom:-7px;
     }
 }
-.case_index_item_img{
+.case_list_item_img{
     display:block;
     height:181px;
     line-height:0;
     text-align:center;
+    overflow:hidden;
     margin-bottom:10px;
     img{ height:100%;width:auto; }
 }
-.case_index_item_title_Zh,.case_index_item_title_En{
+.case_list_item_title{
     display:block;
     text-align:center;
     line-height:25px;
     font-family: "Microsoft YaHei";
-}
-.case_index_item_title_Zh{
     font-size:18px;
     font-weight:bold;
+    margin-bottom:5px;
 }
-.case_index_item_title_En{
+.case_list_item_title_Zh,.case_list_item_title_En{
+    display:block;
+}
+.case_list_item_title_Zh{
+    font-size:18px;
+}
+.case_list_item_title_En{
+    font-weight:normal;
     font-size:16px;
+}
+.case_webDesign_item_img{
+    height:194px;
+    position:relative;
+}
+.case_webDesign_hoverText{
+    position:absolute;
+    z-index:10;
+    color:#fff;
+    padding:40px 15px;
+    text-align:left;
+    line-height:150%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#000;
+    display:none;
+    overflow:hidden;
+    text-overflow: ellipsis;
+     -o-text-overflow: ellipsis;
+    word-wrap:break-word;
+    word-break:break-all;
+    &:hover{
+        opacity:0.6;
+        filter:alpha(opacity=60)
+    }
+}
+a.case_webDesign_hoverText{
+    color:#fff !important;
+}
+//IT webmaster & program
+.case_dev{
+    margin-left:-1 * $case_dev_item_margin;
+    margin-right:-1 * $case_dev_item_margin;
+    padding-top:$case_dev_item_margin_vertical;
+}
+.case_dev_item{
+    background:#fff;
+    border:1px solid #ddd;
+    margin:0 $case_dev_item_margin $case_dev_item_margin_vertical $case_dev_item_margin;
+    width:$case_dev_item_minWidth - $case_dev_item_padding_horizontal * 2 - 2px;
+    padding:$case_dev_item_padding_vertical $case_dev_item_padding_horizontal;
+    margin-bottom:$case_dev_item_margin_vertical;
+    @include CaseDevOne{
+        width:$case_dev_item_width - $case_dev_item_padding_horizontal * 2 - 2px;
+    }
+    @include CaseDevTwo{
+        float:left;
+    }
+}
+.case_dev_item_title{
+    font-family: "Microsoft YaHei";
+    font-size:18px;
+    line-height:30px;
+    border-bottom:1px solid #d9d9d9;
+    padding-bottom:12px;
+    display:block;
+}
+.case_dev_item_con{
+    display:block;
+    overflow:hidden;
+    padding-top:20px;
+}
+.case_dev_item_con_left,.case_dev_item_con_right{
+    margin-bottom:14px;
+}
+.case_dev_item_con_left{
+    height:$case_dev_item_con_partHeight;
+    overflow:hidden;
+    text-align:center;
+    line-height:0;
+    img{
+        width:auto;
+        height:100%;
+    }
+    @include CaseDevOne{
+        float:left;
+        width:218px;
+        margin-right:12px;
+    }
+}
+.case_dev_item_con_right{
+    height:$case_dev_item_con_partHeight;
+    overflow:hidden;
+    line-height:28px;
+    color:#8d8d8d;
+    letter-spacing:0.5px;
 }
 

@@ -16,6 +16,9 @@
     margin-right:20px;
     line-height:0;
     display:block;
+    img{
+        width:100%;
+    }
 }
 .culture_con_title_right{
     overflow:hidden;
@@ -27,6 +30,9 @@
     font-weight: bold;
 }
 .culture_con_title_info{
+    a{
+        color:#999;
+    }
     color: #999;
     line-height: 20px;
 }
@@ -40,6 +46,9 @@
     }
 }
 .culture_con_box{
+    img{
+        max-width:100%;
+    }
     .hope_article_preNext{
         li{
             color:#000;
@@ -79,6 +88,14 @@
         display:inline;
     }
 
+}
+.culture_con_goTop{
+    position:fixed;
+    left:50%;
+    bottom:100px;
+    z-index:100;
+    cursor: pointer;
+    margin-left:620px;
 }
 .commentbox {margin-top:20px; overflow:hidden;}
 .commentbox_type{height:98px;background-color:#fff; border:solid 1px #d9d9d9; border-radius:2px;}

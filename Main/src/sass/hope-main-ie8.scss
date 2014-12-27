@@ -48,4 +48,16 @@
         padding-right:30px;
         border-right:1px solid $main_box_border_color;
 }
-
+.main_page_web{
+    a{
+        color:#cf5d53!important;
+        &:hover{
+            background-color:#cf5d53!important;
+            color:#fff!important;
+        }
+    }
+    a.p_cur{
+        background-color:#cf5d53!important;
+        color:#fff!important;
+    }
+}

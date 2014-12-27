@@ -48,6 +48,12 @@ a.culture_linkToSelf{
         background-color:#bd9d6b;
     }
 }
+.culture a.p_cur{
+    @include SmallDesk{
+        background:#b59563;
+        color:#fff;
+    }
+}
 
 .culture_footer{
     border-top:none;
