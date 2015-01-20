@@ -32,6 +32,10 @@
       .dairylist_time {
         float: right;
         color: #999;
+        @include SmallPhone{
+          float:none;
+          display: block;
+        }
       }
       .dairylist_content {
         padding-left: 10px;
@@ -45,6 +49,8 @@
     }
   }
 }
+
+
 //dairy_search
 .internal_dairy_ad_search {
   margin-top: 10px;
@@ -67,6 +73,10 @@
   .internal_dairy_ad_search_submit {
     padding: 2px 4px;
   }
+  .internal_diary_search_frame,.internal_diary_search_option{
+    display: inline-block;
+
+  }
 }
 @include SmallPhone {
   .internal_box_left_col_list_con .internal_box_left_add {
@@ -77,7 +87,7 @@
   .internal_box_left_col_list_con .internal_box_left_add_li {
     margin: 0;
   }
-  .internal_dairy_ad_search_keyword {
-    width: 180px;
+  .internal_dairy_ad_search .internal_dairy_ad_search_keyword {
+    width: 140px;
   }
 }

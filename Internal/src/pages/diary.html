@@ -175,7 +175,14 @@
                             <span class="internal_box_section_title"> <a class="internal_box_section_title_cnt" href="#"> <span class="hope_list_style hope_list_style_Square">&nbsp;</span> 厚朴日志 </a> </span>
                         </div>
                         <ul class="internal_box_left_dairylist">
-                            <li class="internal_box_left_dairylist_li"> <h2 class="dairylist_head"><span class="dairylist_time">2014-12-16 03:46:47</span><span class="dairylist_daily"><a href="http://ce.sysu.edu.cn/hope/Diaries/Index.aspx">【厚朴足迹】</a></span><a href="http://ce.sysu.edu.cn/hope/Item/135719.aspx" title="2014-12-15">2014-12-15</a></h2>
+                            <li class="internal_box_left_dairylist_li">
+                                <h2 class="dairylist_head">
+                                    <span class="dairylist_daily">
+                                        <a href="http://ce.sysu.edu.cn/hope/Diaries/Index.aspx">【厚朴足迹】</a>
+                                        <a href="http://ce.sysu.edu.cn/hope/Item/135719.aspx" title="2014-12-15">2014-12-15</a>
+                                    </span>
+                                    <span class="dairylist_time">2014-12-16 03:46:47</span>
+                                </h2>
                                 <div class="dairylist_content">
                                     <p><strong>肖鹏飞</strong></p>早上起得比较晚，写了公选论文，下午值班，晚上完成重构的细节，结果当我从滑动门中抬起头时，发现已经4点了。。。。
                                 </div> </li>
@@ -298,10 +305,15 @@
         <!-- E internal_box_right -->
         <!-- S diary search -->
         <div id="ad_search" class="ta_c internal_dairy_ad_search">
-            <label id="s_icon" for="adKeyword">留言搜索： <select name="nodeId'" id="nodeId" size="1"> <option value="40">厚朴日志</option> <option value="78">&nbsp;&nbsp;厚朴足迹</option> <option value="79">&nbsp;&nbsp;值班日志</option> </select> </label>
-            <label> <select name="fieldOption" id="fieldOption" size="1"> <option value="Title" selected="">留言主题</option> <option value="Inputer">留言人</option> <option value="Content">留言内容</option> </select> </label>
-            <label> <input id="keyword_search" class="inputxt va_top internal_dairy_ad_search_keyword" onfocus="this.value='';" maxlength="100" size="30" value="" name="adKeyword" /> </label>
-            <label> <input id="DiarySubmit" type="button" class="button va_top internal_dairy_ad_search_submit" value="搜索" name="Button" /> </label>
+            <label id="s_icon" for="adKeyword">留言搜索： </label>
+            <label class="internal_diary_search_option">
+                <select name="fieldOption" id="fieldOption" size="1"> <option value="Title" selected="">留言主题</option> <option value="Inputer">留言人</option> <option value="Content">留言内容</option> </select>
+                <select name="nodeId'" id="nodeId" size="1"> <option value="40">厚朴日志</option> <option value="78">&nbsp;&nbsp;厚朴足迹</option> <option value="79">&nbsp;&nbsp;值班日志</option> </select>
+            </label>
+            <label class="internal_diary_search_frame">
+                <input id="keyword_search" class="inputxt va_top internal_dairy_ad_search_keyword" onfocus="this.value='';" maxlength="100" size="30" value="" name="adKeyword" />
+                <input id="DiarySubmit" type="button" class="button va_top internal_dairy_ad_search_submit" value="搜索" name="Button" />
+            </label>
         </div>
         <!-- E diary search -->
     </div>

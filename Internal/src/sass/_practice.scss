@@ -1,0 +1,61 @@
+.internal_practice_container{
+  margin-bottom: 0;
+  .internal_practice_card{
+    width:276px;
+    @media (min-width: 620px){width:580px;}
+    @include MediumDesk{width:870px;}
+    @include LargeDesk{width:1160px;}
+    .internal_card_title{padding:0 0 20px 10px;font-size:24px;line-height: 30px;font-family: "Microsoft Yahei";}
+    .internal_card_container{background-color: #fff;}
+    .internal_practice_card_item{padding:0;width:276px;background: none;}
+    .internal_practice_list_img{max-width: 276px;height:184px;margin: 0 auto;}
+    .internal_card_header{padding:10px;
+      .internal_card_header_title{
+        font-weight: normal;
+        line-height:20px;
+        font-size: 16px;
+      }
+      .internal_card_header_below{
+        padding:10px 0 0;
+        display: inline-block;
+        width: 100%;
+        .internal_card_header_author {
+          float:left;
+          img{
+            border-radius:0;
+            float:left;
+            width:30px;
+            height:30px;
+          }
+          .author_name{padding:13px 5px 0;font-size: 12px;float:left;}
+        }
+        .internal_card_info{margin-top: 15px;
+          .internal_card_info_item{color:#000;}
+        }
+      }
+    }
+  }
+}
+.hope_card_WithShadow .internal_practice_card_item:after{
+  background:none;
+}
+.internal_practice_card_shadow{
+  background: url(../../dist/images/practice/internal_banner_practice_card_shadow.png) no-repeat;
+  width:276px;
+  height:5px;
+}
+.internal_practice_search_page{
+  margin:0 auto;
+  width:276px;
+  margin-top:-20px;
+  @media (min-width: 620px){width:580px;}
+  @include MediumDesk{width:870px;}
+  @include LargeDesk{width:1160px;}
+  .inputPager{
+    .inputPager_page{
+      float:none;
+      width:380px;
+      @include MediumDesk{width:550px;}
+    }
+  }
+}

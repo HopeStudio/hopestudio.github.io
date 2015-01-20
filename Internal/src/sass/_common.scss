@@ -8,6 +8,10 @@
 .internal_container {
   max-width: $global_frame_maxWidth;
 }
+.internal_logo{
+  background: url(../../dist/images/logo/logo_internal.png) no-repeat;
+  width:160px;
+}
 //headerWrap
 .internal_headerWrap {
   z-index: 2;

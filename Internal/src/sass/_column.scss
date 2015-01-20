@@ -87,6 +87,14 @@
       display: block;
     }
   }
+
+  #btnPage:hover{
+    background-color: $global_color_internal_main;
+  }
+}
+.internal_page_web .inputPager_page .p_cur{
+  background-color: $global_color_internal_main;
+  color: #fff;
 }
 //Shadow_style
 .internal_box_shadow {
@@ -145,8 +153,4 @@
   line-height: 29px;
   border-bottom: 1px dotted #ccc;
   margin-left: 15px;
-}
-//search
-.internal_list_item_content_news {
-  display: inline;
 }

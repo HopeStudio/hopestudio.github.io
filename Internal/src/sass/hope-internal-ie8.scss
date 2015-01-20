@@ -81,9 +81,15 @@
 .internal .internal_trees_container{width:1160px!important;}
 .internal .internal_headerWrap .internal_trees_headerWrap_container{width: 1200px!important;}
 .internal_trees_location{width:1160px;}
-.internal_trees_books_list_li{width:20%;}
+.internal_trees_books_list_li{width:16.6%;}
 .internal_trees_books_list_con{
-  img{display: block;margin:0 auto;max-width:100%;}
+  .internal_trees_books_list_img{width:80px;height:100px;background: url(../../dist/images/trees/internal_trees_book_icon.png);}
+  .books_intAdmin{background-position: 0 0px;}
+  .books_art{background-position: 8px -150px;}
+  .books_photography{background-position: 5px -300px;}
+  .books_programing{background-position: 0 -450px;}
+  .books_frontEnd{background-position: 0 -600px;}
+  .books_lab{background-position: 5px -750px;}
   .internal_trees_books_list_title{
     & a:hover{background: none;color:$global_color_internal_main;}
   }
@@ -94,8 +100,41 @@
     .internal_article{display: block;padding:0 20px;font-size:16px;}
   }
   .internal_trees_matrix_box_right{margin-left: 330px;width:auto;float:none;
-    .internal_trees_matrix_box_right_list{border-left: 1px solid #fff;}
-    .internal_trees_matrix_box_right_list_li{width:20%;}
+    .internal_trees_matrix_box_right_list{border-left: 1px solid #fff;
+      .internal_trees_matrix_box_right_list_li{width:20%;}
+      .internal_trees_matrix_box_group_icon{width:105px;height:110px;background:url(../../dist/images/trees/internal_trees_group_icon.png) no-repeat;}
+      .group_intAdmin{background-position: 0 0px;}
+      .group_programing{background-position: 0 -150px;}
+      .group_photography{background-position: 0 -300px;}
+      .group_art{background-position: 0 -447px;}
+      .group_frontEnd{background-position: 0 -600px;}
+    }
   }
 }
 .internal_box_shadow{background: none;}
+
+
+//searchPager
+  .internal_page_web .paginator{
+    float:right;
+    .paginator2{
+      width:auto!important;
+      float:right;
+    }
+    a,.cpb{
+      margin-top:10px;
+      margin-left: 7px;
+      margin-right: 0px!important;
+      padding: 0 7px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    a:hover,.cpb{
+      color:$global_color_search_input_bg;
+      background-color: $global_color_internal_main;
+    }
+  }
+  .hope_pager_mobile {display: none; }
+
+//practice
+.internal_practice_container .internal_practice_card{width:870px;}

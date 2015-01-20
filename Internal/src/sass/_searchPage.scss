@@ -1,0 +1,57 @@
+.internal_page_mobile .paginator,.internal_page_web .paginator{
+  .paginator1{display: none;}
+  select{display: none;}
+  .paginator2{
+    display: block;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+  }
+  a,.cpb{
+    color: $global_color_column_page_a;
+    float: left;
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+
+.internal_page_mobile .paginator{
+  text-align: center;
+  .paginator2{
+    float:none!important;
+    width: 320px!important;
+    margin:$pager_margin_vertical auto;
+    border-radius: $pager_mobile_borderRadius;
+    box-shadow: 2px 2px 3px #d0cfcc;
+  }
+  a,.cpb{
+    padding: 0 10px;
+    float:none!important;
+  }
+  a:hover,.cpb {
+    color: $global_color_search_input_bg;
+  }
+}
+
+@include SmallDesk{
+  //Page
+  .internal_page_web .paginator{
+    float:right;
+    .paginator2{
+      width:100%!important;
+    }
+    a,.cpb{
+      margin-top:10px;
+      margin-left: 7px;
+      margin-right: 0px!important;
+      padding: 0 7px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+    a:hover,.cpb{
+      color:$global_color_search_input_bg;
+      background-color: $global_color_internal_main;
+    }
+  }
+  .hope_pager_mobile {display: none; }
+}
